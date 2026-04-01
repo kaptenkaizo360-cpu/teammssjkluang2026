@@ -1,0 +1,2780 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Saiz Baju – Merentas Desa MSSJ 2026 Kluang</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(145deg,#0a3d62 0%,#1565c0 55%,#1b5e20 100%);min-height:100vh;padding:16px}
+.wrap{max-width:960px;margin:0 auto}
+ 
+/* HEADER */
+.hdr{text-align:center;color:#fff;padding:28px 16px 18px}
+.hdr-road{font-size:.72rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;opacity:.75;margin-bottom:4px}
+.hdr h1{font-size:2rem;font-weight:900;letter-spacing:1px;text-transform:uppercase;line-height:1.1;text-shadow:0 2px 12px rgba(0,0,0,.3)}
+.hdr-comeback{font-size:.85rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#ffd700;margin-top:5px;text-shadow:0 1px 6px rgba(0,0,0,.3)}
+.hdr-team{font-size:1.05rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;opacity:.92;margin-top:3px}
+.hdr-sub{font-size:.78rem;opacity:.75;margin-top:4px;letter-spacing:.3px}
+.badge{display:inline-block;background:#ffd700;color:#0a3d62;font-weight:700;font-size:.72rem;padding:3px 14px;border-radius:20px;margin-top:10px}
+ 
+/* CARD */
+.card{background:#fff;border-radius:16px;padding:22px 20px;margin-bottom:16px;box-shadow:0 6px 28px rgba(0,0,0,.16)}
+.sec-title{font-size:.95rem;font-weight:800;color:#0a3d62;padding-bottom:10px;margin-bottom:14px;border-bottom:2px solid #e3eaf6;display:flex;align-items:center;gap:7px}
+ 
+/* LEGEND */
+.legend{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.legend-item{display:flex;align-items:center;gap:6px;font-size:.78rem;color:#555;font-weight:600}
+.legend-dot{width:12px;height:12px;border-radius:50%}
+ 
+/* TABLE */
+.tbl-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:700px}
+thead th{background:#0a3d62;color:#fff;font-size:.72rem;text-transform:uppercase;letter-spacing:.4px;padding:10px 10px;text-align:left;white-space:nowrap}
+thead th:first-child{border-radius:8px 0 0 0}
+thead th:last-child{border-radius:0 8px 0 0}
+tbody tr{border-bottom:1px solid #f0f3f8;transition:background .15s}
+tbody tr:hover{background:#f7f9ff}
+tbody tr.done{background:#f0fff4}
+td{padding:10px 10px;vertical-align:middle;font-size:.83rem}
+td.num{color:#aaa;font-weight:700;text-align:center;width:36px}
+td.nama{font-weight:700;color:#1a2a4a;line-height:1.3}
+td.nama small{display:block;font-weight:400;color:#888;font-size:.72rem;margin-top:1px}
+td.cat{white-space:nowrap}
+ 
+/* Category chip */
+.chip{display:inline-block;font-size:.68rem;font-weight:700;padding:2px 9px;border-radius:12px;white-space:nowrap}
+.chip-atlet{background:#e3f2fd;color:#0a3d62}
+.chip-pgw{background:#fff3e0;color:#e65100}
+.chip-guru{background:#f3e5f5;color:#6a1b9a}
+ 
+/* STATUS dot */
+td.status{text-align:center}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block;background:#ddd}
+.dot.done{background:#27ae60}
+ 
+/* TYPE BUTTONS */
+.type-row{display:flex;gap:6px}
+.tb{border:1.5px solid #dde1e7;border-radius:8px;background:#fafafa;cursor:pointer;padding:5px 8px;display:flex;flex-direction:column;align-items:center;gap:2px;transition:all .15s;min-width:62px}
+.tb:hover{border-color:#1565c0;background:#e8f0fe}
+.tb.active-polo{background:#1565c0;border-color:#1565c0;color:#fff}
+.tb.active-short{background:#2e7d32;border-color:#2e7d32;color:#fff}
+.tb.active-long{background:#6a1b9a;border-color:#6a1b9a;color:#fff}
+.tb svg{width:28px;height:28px}
+.tb span{font-size:.6rem;font-weight:700;text-align:center;line-height:1.1}
+ 
+/* SIZE BUTTONS */
+.size-row{display:flex;gap:4px;flex-wrap:wrap}
+.sb{border:1.5px solid #dde1e7;border-radius:7px;background:#fafafa;cursor:pointer;font-size:.7rem;font-weight:700;color:#555;padding:5px 7px;min-width:30px;text-align:center;transition:all .15s}
+.sb:hover{border-color:#1565c0;color:#1565c0;background:#e8f0fe}
+.sb.active{background:#1565c0;border-color:#1565c0;color:#fff}
+ 
+/* FOOTER ACTIONS */
+.footer-bar{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}
+.btn{padding:12px 22px;border:none;border-radius:10px;font-size:.88rem;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all .2s}
+.btn-primary{background:linear-gradient(135deg,#1565c0,#0a3d62);color:#fff;box-shadow:0 3px 12px rgba(21,101,192,.35)}
+.btn-primary:hover{opacity:.9;transform:translateY(-1px)}
+.btn-export{background:linear-gradient(135deg,#2e7d32,#1b5e20);color:#fff;box-shadow:0 3px 12px rgba(46,125,50,.35)}
+.btn-export:hover{opacity:.9}
+.btn-reset{background:#f5f5f5;color:#666}
+.btn-reset:hover{background:#e0e0e0}
+ 
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:10px;margin-bottom:16px}
+.stat{background:#fff;border-radius:12px;padding:12px 10px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.stat-n{font-size:1.5rem;font-weight:800;color:#1565c0}
+.stat-l{font-size:.68rem;color:#888;text-transform:uppercase;letter-spacing:.3px;margin-top:2px}
+ 
+/* Toast */
+.toast{position:fixed;bottom:20px;right:20px;background:#1a2a4a;color:#fff;padding:11px 18px;border-radius:10px;font-size:.83rem;font-weight:600;box-shadow:0 4px 18px rgba(0,0,0,.28);transform:translateY(60px);opacity:0;transition:all .3s;z-index:999}
+.toast.show{transform:translateY(0);opacity:1}
+.toast.ok{background:#27ae60}
+.toast.err{background:#c0392b}
+ 
+/* PROGRESS */
+.prog-bar{height:6px;background:#e3eaf6;border-radius:6px;overflow:hidden;margin-bottom:6px}
+.prog-fill{height:100%;background:linear-gradient(90deg,#1565c0,#27ae60);border-radius:6px;transition:width .4s}
+.prog-txt{font-size:.72rem;color:#888;text-align:right}
+ 
+/* ROW HIGHLIGHT */
+tr.done td{color:#1a2a4a}
+tr.done td.nama{color:#1a3320}
+ 
+/* Edit overlay */
+#editOvl{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:200;padding:20px;overflow-y:auto}
+.edit-card{max-width:480px;margin:40px auto;background:#fff;border-radius:16px;padding:26px 24px;box-shadow:0 8px 40px rgba(0,0,0,.25)}
+.edit-card h3{font-size:1rem;font-weight:800;color:#0a3d62;margin-bottom:16px}
+.eg{margin-bottom:14px}
+.eg label{display:block;font-size:.75rem;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.4px;margin-bottom:6px}
+ 
+@media(max-width:600px){
+  .type-row{flex-wrap:wrap}
+  .tb{min-width:52px;padding:4px 5px}
+}
+
+/* Stat clickable */
+.stat-click{cursor:pointer;transition:all .18s}
+.stat-click:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(21,101,192,.18);border:1.5px solid #1565c0}
+
+/* Name List Popup */
+#namePopup{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:700;padding:20px;align-items:center;justify-content:center}
+#namePopup.open{display:flex}
+.name-popup-card{background:#fff;border-radius:16px;width:100%;max-width:420px;max-height:80vh;display:flex;flex-direction:column;box-shadow:0 12px 40px rgba(0,0,0,.3);overflow:hidden}
+.name-popup-head{padding:16px 20px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+.name-popup-title{font-size:1rem;font-weight:800;color:#0a3d62;font-family:'Outfit',sans-serif}
+.name-popup-close{width:30px;height:30px;border:none;background:#f0f3f8;border-radius:8px;cursor:pointer;font-size:16px;color:#666;display:flex;align-items:center;justify-content:center}
+.name-popup-close:hover{background:#e0e5ee}
+.name-popup-body{overflow-y:auto;padding:0 20px 20px;flex:1}
+.name-popup-empty{text-align:center;padding:30px;color:#aaa;font-size:.88rem}
+.name-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid #f0f3f8}
+.name-row:last-child{border-bottom:none}
+.name-num{width:24px;height:24px;background:#e8f0fe;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:800;color:#1565c0;flex-shrink:0}
+.name-info{flex:1}
+.name-info .ni-name{font-size:.85rem;font-weight:700;color:#1a2a4a}
+.name-info .ni-sub{font-size:.72rem;color:#888;margin-top:1px}
+.name-badge{font-size:.65rem;font-weight:700;padding:2px 7px;border-radius:10px;white-space:nowrap}
+
+/* ══════════════════════════════════════
+   TRAINING SIDEBAR SYSTEM
+══════════════════════════════════════ */
+
+/* Floating sidebar toggle button */
+.sb-toggle{
+  position:fixed;right:20px;top:50%;transform:translateY(-50%);
+  background:linear-gradient(135deg,#b8860b,#d4a012);
+  color:#fff;border:none;border-radius:16px;cursor:pointer;
+  width:52px;padding:14px 0;
+  display:flex;flex-direction:column;align-items:center;gap:5px;
+  box-shadow:0 6px 24px rgba(184,134,11,.45);
+  transition:all .3s;z-index:400;font-family:'Outfit',sans-serif;
+}
+.sb-toggle:hover{transform:translateY(-50%) scale(1.06);box-shadow:0 8px 30px rgba(184,134,11,.6)}
+.sb-toggle .sb-tog-icon{font-size:22px;line-height:1}
+.sb-toggle .sb-tog-label{font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;writing-mode:vertical-rl;text-orientation:mixed;transform:rotate(180deg)}
+.sb-toggle .sb-tog-pulse{width:8px;height:8px;background:#4ade80;border-radius:50%;animation:sbpulse 2s infinite}
+@keyframes sbpulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.85)}}
+
+/* Sidebar Drawer */
+.sb-drawer{
+  position:fixed;top:0;right:-420px;width:400px;height:100vh;
+  background:#0d1b2a;z-index:500;
+  display:flex;flex-direction:column;
+  transition:right .35s cubic-bezier(.4,0,.2,1);
+  box-shadow:-8px 0 40px rgba(0,0,0,.5);
+  font-family:'Outfit',sans-serif;
+}
+.sb-drawer.open{right:0}
+
+/* Drawer header */
+.sb-head{
+  background:linear-gradient(135deg,#0a1628,#1a2a4a);
+  padding:20px 18px 16px;
+  border-bottom:1px solid rgba(184,134,11,.2);
+  flex-shrink:0;
+}
+.sb-head-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.sb-head-brand{display:flex;align-items:center;gap:10px}
+.sb-head-logo{
+  width:40px;height:40px;border-radius:12px;
+  background:linear-gradient(135deg,#d4a012,#b8860b);
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;flex-shrink:0;
+}
+.sb-head-title{font-size:14px;font-weight:800;color:#fff;letter-spacing:.3px;line-height:1.2}
+.sb-head-sub{font-size:10px;color:#b8860b;text-transform:uppercase;letter-spacing:1.5px;font-weight:600;margin-top:1px}
+.sb-close{
+  width:32px;height:32px;background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.12);border-radius:8px;
+  color:#aaa;cursor:pointer;font-size:16px;
+  display:flex;align-items:center;justify-content:center;
+  transition:all .2s;flex-shrink:0;
+}
+.sb-close:hover{background:rgba(255,255,255,.15);color:#fff}
+.sb-meta-row{display:flex;gap:8px;flex-wrap:wrap}
+.sb-meta-chip{
+  display:inline-flex;align-items:center;gap:4px;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);
+  border-radius:20px;padding:4px 10px;font-size:10px;color:#ccc;font-weight:600;
+}
+
+/* Drawer nav list */
+.sb-nav-list{
+  flex:1;overflow-y:auto;padding:14px 12px;
+  scrollbar-width:thin;scrollbar-color:rgba(184,134,11,.3) transparent;
+}
+.sb-nav-list::-webkit-scrollbar{width:4px}
+.sb-nav-list::-webkit-scrollbar-thumb{background:rgba(184,134,11,.3);border-radius:2px}
+.sb-section-label{
+  font-size:9px;text-transform:uppercase;letter-spacing:2.5px;
+  color:rgba(255,255,255,.3);padding:12px 8px 6px;font-weight:700;
+}
+.sb-nav-item{
+  display:flex;align-items:center;gap:11px;
+  padding:11px 12px;border-radius:12px;cursor:pointer;
+  margin-bottom:3px;border:1px solid transparent;
+  transition:all .2s;
+}
+.sb-nav-item:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.08)}
+.sb-nav-icon{
+  width:38px;height:38px;border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;flex-shrink:0;
+}
+.sb-nav-text{flex:1;min-width:0}
+.sb-nav-title{font-size:13px;font-weight:700;color:#e2e8f0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sb-nav-desc{font-size:10px;color:rgba(255,255,255,.35);margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sb-nav-arrow{
+  width:22px;height:22px;background:rgba(255,255,255,.06);
+  border-radius:6px;display:flex;align-items:center;justify-content:center;
+  color:rgba(255,255,255,.3);font-size:12px;flex-shrink:0;
+  transition:all .2s;
+}
+.sb-nav-item:hover .sb-nav-arrow{background:rgba(184,134,11,.2);color:#d4a012;transform:translateX(2px)}
+
+/* Drawer footer */
+.sb-foot{
+  padding:14px 16px;border-top:1px solid rgba(255,255,255,.06);
+  flex-shrink:0;
+}
+.sb-foot-btn{
+  display:flex;align-items:center;justify-content:center;gap:7px;
+  width:100%;padding:12px;border:none;border-radius:12px;
+  background:linear-gradient(135deg,#d4a012,#b8860b);
+  color:#fff;font-size:13px;font-weight:800;cursor:pointer;
+  font-family:'Outfit',sans-serif;transition:all .2s;
+  box-shadow:0 4px 16px rgba(184,134,11,.35);
+}
+.sb-foot-btn:hover{opacity:.9;transform:translateY(-1px)}
+
+/* Training Panel MODAL (full view) */
+.tp-modal{
+  display:none;position:fixed;inset:0;z-index:600;
+  background:rgba(0,0,0,.7);backdrop-filter:blur(4px);
+  padding:16px;overflow-y:auto;
+  animation:tpfadein .25s ease;
+}
+.tp-modal.open{display:block}
+@keyframes tpfadein{from{opacity:0}to{opacity:1}}
+.tp-wrap{
+  max-width:860px;margin:0 auto;
+  background:#f5f3ef;border-radius:20px;
+  min-height:calc(100vh - 32px);overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,.4);
+  display:flex;flex-direction:column;
+}
+
+/* Modal topbar */
+.tp-topbar{
+  background:#0a1628;padding:16px 22px;
+  display:flex;align-items:center;justify-content:space-between;
+  flex-shrink:0;
+}
+.tp-topbar-left{display:flex;align-items:center;gap:10px}
+.tp-icon-box{
+  width:36px;height:36px;border-radius:10px;
+  background:linear-gradient(135deg,#d4a012,#b8860b);
+  display:flex;align-items:center;justify-content:center;font-size:17px;
+}
+.tp-topbar-title{font-size:14px;font-weight:800;color:#fff;font-family:'Outfit',sans-serif}
+.tp-topbar-sub{font-size:11px;color:#b8860b;font-family:'Outfit',sans-serif;margin-top:1px}
+.tp-close{
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);
+  border-radius:8px;color:#aaa;cursor:pointer;
+  padding:8px 14px;font-size:13px;font-weight:700;font-family:'Outfit',sans-serif;
+  transition:all .2s;
+}
+.tp-close:hover{background:rgba(255,255,255,.2);color:#fff}
+
+/* Modal inner tabs */
+.tp-inner{flex:1;overflow-y:auto;padding:24px}
+.tp-panel-tabs{display:flex;gap:6px;margin-bottom:20px;flex-wrap:wrap}
+.tp-tab{
+  padding:8px 16px;border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;
+  border:1.5px solid rgba(0,0,0,.1);background:#fff;color:#555;
+  transition:all .2s;font-family:'Outfit',sans-serif;
+}
+.tp-tab.active{background:#0a3d62;color:#fff;border-color:#0a3d62}
+.tp-tab:hover:not(.active){background:#e8f0fe;color:#0a3d62;border-color:#1565c0}
+
+/* Panel content areas in modal */
+.tp-content{display:none}
+.tp-content.active{display:block;animation:tpfadein .25s ease}
+
+/* Phases in modal */
+.tp-phase-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
+.tp-phase-card{
+  border-radius:14px;padding:18px;cursor:pointer;
+  border:2px solid transparent;transition:all .25s;
+  position:relative;overflow:hidden;
+}
+.tp-phase-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.tpc1{background:rgba(99,102,241,.08)}.tpc1::before{background:#6366f1}
+.tpc2{background:rgba(245,158,11,.08)}.tpc2::before{background:#f59e0b}
+.tpc3{background:rgba(236,72,153,.08)}.tpc3::before{background:#ec4899}
+.tpc4{background:rgba(16,185,129,.08)}.tpc4::before{background:#10b981}
+.tp-phase-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.1)}
+.tp-phase-card.selected{border-color:currentColor;box-shadow:0 0 0 3px rgba(184,134,11,.15)}
+.tpc1.selected{border-color:#6366f1}.tpc2.selected{border-color:#f59e0b}
+.tpc3.selected{border-color:#ec4899}.tpc4.selected{border-color:#10b981}
+.tp-phase-num{font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:2px;margin-bottom:4px;font-family:'Outfit',sans-serif}
+.tpc1 .tp-phase-num{color:#818cf8}.tpc2 .tp-phase-num{color:#fbbf24}
+.tpc3 .tp-phase-num{color:#f472b6}.tpc4 .tp-phase-num{color:#34d399}
+.tp-phase-name{font-size:16px;font-weight:800;margin-bottom:2px;font-family:'Outfit',sans-serif}
+.tp-phase-date{font-size:11px;color:#888;font-family:'Outfit',sans-serif}
+.tp-phase-detail{
+  background:#fff;border-radius:14px;padding:20px;margin-bottom:20px;
+  border:1px solid #e2e8f0;display:none;
+}
+.tp-phase-detail.open{display:block;animation:tpfadein .3s}
+.tp-detail-hdr{font-size:16px;font-weight:800;margin-bottom:10px;color:#0a3d62;font-family:'Outfit',sans-serif}
+.tp-detail-body{font-size:13px;line-height:1.75;color:#4a5568}
+.tp-detail-role{
+  border-radius:12px;padding:16px;margin-top:12px;
+}
+.tp-detail-role h5{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;font-family:'Outfit',sans-serif}
+.tp-detail-role ul{list-style:none;padding:0}
+.tp-detail-role li{font-size:12.5px;padding:5px 0;line-height:1.6;color:#374151}
+
+/* Day grid in modal */
+.tp-day-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin:16px 0}
+.tp-day-card{
+  background:#fff;border:1px solid #e2e8f0;border-radius:10px;
+  padding:10px 6px;cursor:pointer;transition:all .2s;text-align:center;
+}
+.tp-day-card:hover,.tp-day-card.sel{border-color:#0a3d62;background:#f0f5ff;transform:translateY(-1px)}
+.tp-day-card .tpd-name{font-size:9px;text-transform:uppercase;letter-spacing:.5px;color:#94a3b8;margin-bottom:3px;font-family:'Outfit',sans-serif}
+.tp-day-card .tpd-date{font-size:15px;font-weight:800;margin-bottom:5px;font-family:'Outfit',sans-serif}
+.tp-day-card .tpd-chip{font-size:9px;padding:2px 5px;border-radius:4px;font-weight:700;font-family:'Outfit',sans-serif}
+.tpdt-hard{background:rgba(239,68,68,.15);color:#dc2626}
+.tpdt-med{background:rgba(245,158,11,.15);color:#d97706}
+.tpdt-easy{background:rgba(16,185,129,.15);color:#059669}
+.tpdt-rest{background:rgba(148,163,184,.15);color:#64748b}
+.tpdt-test{background:rgba(139,92,246,.15);color:#7c3aed}
+.tp-day-detail{
+  background:#fff;border-radius:12px;padding:18px;
+  border-left:4px solid #0a3d62;margin-top:10px;display:none;
+}
+.tp-day-detail.open{display:block;animation:tpfadein .25s}
+
+/* Timeline for morning/raceday */
+.tp-tl{padding-left:24px;position:relative;margin:10px 0}
+.tp-tl::before{content:'';position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(to bottom,#b8860b,#1565c0,#27ae60);border-radius:2px}
+.tp-tl-item{
+  position:relative;margin-bottom:8px;background:#fff;
+  border:1px solid #e2e8f0;border-radius:12px;padding:12px 16px;cursor:pointer;
+  transition:all .2s;
+}
+.tp-tl-item::before{content:'';position:absolute;left:-21px;top:16px;width:10px;height:10px;border-radius:50%;background:#b8860b;border:2px solid #f5f3ef}
+.tp-tl-item:hover{border-color:#0a3d62;background:#f7f9ff}
+.tp-tl-time{font-size:12px;font-weight:800;color:#b8860b;margin-bottom:2px;font-family:'Outfit',sans-serif}
+.tp-tl-title{font-size:13px;font-weight:700;color:#1a2a4a;font-family:'Outfit',sans-serif}
+.tp-tl-extra{display:none;margin-top:10px;padding-top:10px;border-top:1px solid #e2e8f0;font-size:12.5px;color:#4a5568;line-height:1.7}
+
+/* Do/Dont */
+.tp-dd-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.tp-do{background:rgba(16,185,129,.06);border:1.5px solid rgba(16,185,129,.2);border-radius:12px;padding:18px}
+.tp-dont{background:rgba(239,68,68,.06);border:1.5px solid rgba(239,68,68,.2);border-radius:12px;padding:18px}
+.tp-do h4{color:#059669;font-size:14px;margin-bottom:12px;font-family:'Outfit',sans-serif}
+.tp-dont h4{color:#dc2626;font-size:14px;margin-bottom:12px;font-family:'Outfit',sans-serif}
+.tp-do li,.tp-dont li{font-size:12px;padding:4px 0 4px 20px;list-style:none;position:relative;color:#374151;line-height:1.5}
+.tp-do li::before{content:'✓';position:absolute;left:0;color:#059669;font-weight:800}
+.tp-dont li::before{content:'✕';position:absolute;left:0;color:#dc2626;font-weight:800}
+
+/* Stats row */
+.tp-stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:20px}
+.tp-stat{background:#fff;border-radius:12px;padding:14px;text-align:center;border:1px solid #e2e8f0}
+.tp-stat-n{font-size:26px;font-weight:900;color:#0a3d62;font-family:'Outfit',sans-serif}
+.tp-stat-l{font-size:10px;color:#888;text-transform:uppercase;letter-spacing:.5px;margin-top:3px;font-family:'Outfit',sans-serif}
+
+/* Callout in modal */
+.tp-callout{border-radius:12px;padding:14px 18px;margin:14px 0;font-size:13px;border-left:3px solid}
+.tp-callout strong{display:block;margin-bottom:4px;font-size:13px}
+.tp-callout p{color:#4a5568;line-height:1.5;font-size:12.5px}
+.tp-c-gold{background:rgba(184,134,11,.05);border-color:#b8860b}.tp-c-gold strong{color:#b8860b}
+.tp-c-red{background:rgba(220,38,38,.05);border-color:#dc2626}.tp-c-red strong{color:#dc2626}
+.tp-c-green{background:rgba(5,150,105,.05);border-color:#059669}.tp-c-green strong{color:#059669}
+
+/* Supplement grid */
+.tp-supp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.tp-supp{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:14px;text-align:center}
+.tp-supp .ts-ico{font-size:28px;display:block;margin-bottom:6px}
+.tp-supp .ts-name{font-size:12px;font-weight:800;color:#1a2a4a;font-family:'Outfit',sans-serif}
+.tp-supp .ts-desc{font-size:10px;color:#888;margin-top:2px}
+
+/* Table in modal */
+.tp-tbl{width:100%;border-collapse:collapse;font-size:12px;margin:10px 0}
+.tp-tbl thead th{background:#0a3d62;color:#fff;padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px}
+.tp-tbl tbody td{padding:9px 12px;border-bottom:1px solid #f0f3f8;color:#4a5568}
+.tp-tbl tbody td:first-child{font-weight:600;color:#1a2a4a}
+.tp-tbl tbody tr:hover td{background:#f7f9ff}
+
+/* Safety grid */
+.tp-safety-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.tp-safety-card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:14px;text-align:center}
+.tp-safety-card .ts-ico{font-size:26px;display:block;margin-bottom:6px}
+.tp-safety-card h4{font-size:11px;font-weight:800;color:#1a2a4a;font-family:'Outfit',sans-serif;margin-bottom:3px}
+.tp-safety-card p{font-size:10px;color:#888}
+
+/* Intensity chart */
+.tp-int-chart{display:flex;align-items:flex-end;gap:12px;height:100px;padding:14px;background:#fff;border-radius:12px;margin:14px 0;border:1px solid #e2e8f0}
+.tp-int-bar-g{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px}
+.tp-int-bar{width:100%;border-radius:6px 6px 0 0}
+.tp-int-lbl{font-size:10px;color:#888;font-weight:700;text-align:center;font-family:'Outfit',sans-serif}
+
+/* Overlay backdrop */
+.sb-backdrop{
+  display:none;position:fixed;inset:0;background:rgba(0,0,0,.4);
+  z-index:450;backdrop-filter:blur(2px);transition:opacity .3s;
+}
+.sb-backdrop.open{display:block}
+
+@media(max-width:480px){
+  .sb-drawer{width:100%}
+  .tp-phase-grid{grid-template-columns:1fr}
+  .tp-stats-row{grid-template-columns:1fr 1fr}
+  .tp-dd-grid{grid-template-columns:1fr}
+  .tp-day-grid{grid-template-columns:repeat(4,1fr)}
+  .tp-supp-grid,.tp-safety-grid{grid-template-columns:1fr 1fr}
+}
+
+/* ══ MAIN PAGE NAVIGATION ══ */
+.main-page{display:block}
+.section-page{display:none}
+.section-page.active{display:block}
+.nav-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:8px}
+.nav-card{background:#fff;border-radius:18px;padding:22px 16px 18px;text-align:center;cursor:pointer;border:2px solid transparent;transition:all .22s;box-shadow:0 4px 16px rgba(0,0,0,.08);position:relative;overflow:hidden;-webkit-tap-highlight-color:transparent}
+.nav-card:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(0,0,0,.14)}
+.nav-card:active{transform:scale(.97)}
+.nav-card .nc-title{font-size:.88rem;font-weight:800;color:#1a2a4a;font-family:'Outfit',sans-serif;line-height:1.3}
+.nav-card .nc-sub{font-size:.68rem;color:#94a3b8;margin-top:4px;font-family:'Outfit',sans-serif}
+.nc-ico-wrap{width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-size:26px;box-shadow:0 4px 12px rgba(0,0,0,.18)}
+.nc-atlet{border-color:#bfdbfe;background:linear-gradient(145deg,#fff,#eff6ff)}.nc-atlet:hover{border-color:#3b82f6}.nc-atlet .nc-ico-wrap{background:linear-gradient(135deg,#1d4ed8,#3b82f6)}
+.nc-pgw{border-color:#fde68a;background:linear-gradient(145deg,#fff,#fffbeb)}.nc-pgw:hover{border-color:#f59e0b}.nc-pgw .nc-ico-wrap{background:linear-gradient(135deg,#d97706,#f59e0b)}
+.nc-guru{border-color:#d9f99d;background:linear-gradient(145deg,#fff,#f7fee7)}.nc-guru:hover{border-color:#65a30d}.nc-guru .nc-ico-wrap{background:linear-gradient(135deg,#4d7c0f,#65a30d)}
+.nc-latihan{border-color:#e9d5ff;background:linear-gradient(145deg,#fff,#faf5ff)}.nc-latihan:hover{border-color:#9333ea}.nc-latihan .nc-ico-wrap{background:linear-gradient(135deg,#7c3aed,#9333ea)}
+.nc-tempahan{border-color:#fed7aa;background:linear-gradient(145deg,#fff,#fff7ed);grid-column:1/-1}.nc-tempahan:hover{border-color:#ea580c}.nc-tempahan .nc-ico-wrap{background:linear-gradient(135deg,#c2410c,#ea580c)}
+.nc-tempahan-inner{display:flex;align-items:center;gap:16px;text-align:left}
+.back-btn{display:inline-flex;align-items:center;gap:7px;background:#fff;border:1.5px solid #e2e8f0;border-radius:10px;padding:8px 16px;font-size:.82rem;font-weight:700;color:#1a2a4a;cursor:pointer;margin-bottom:14px;transition:all .2s;font-family:'Outfit',sans-serif;box-shadow:0 2px 6px rgba(0,0,0,.06)}
+.back-btn:hover{background:#f0f5ff;border-color:#1565c0;color:#1565c0}
+.receipt-zone{border:2px dashed #f39c12;border-radius:12px;padding:20px;text-align:center;cursor:pointer;transition:all .2s;background:#fffbf0;margin-top:8px;position:relative}
+.receipt-zone:hover,.receipt-zone.dragover{border-color:#e67e22;background:#fff3dc}
+.receipt-zone input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
+.receipt-zone .rz-ico{font-size:32px;margin-bottom:6px;display:block}
+.receipt-zone .rz-title{font-size:.82rem;font-weight:700;color:#7d5a00}
+.receipt-zone .rz-sub{font-size:.7rem;color:#aaa;margin-top:3px}
+.receipt-preview{margin-top:10px;border-radius:10px;overflow:hidden;position:relative}
+.receipt-preview img{width:100%;max-height:180px;object-fit:cover;border-radius:10px;display:block}
+.receipt-preview .rp-name{background:#fff8e6;border:1px solid #f5cba7;border-radius:8px;padding:7px 10px;font-size:.75rem;color:#7d5a00;font-weight:600;display:flex;align-items:center;justify-content:space-between;gap:6px;margin-top:6px}
+.receipt-preview .rp-remove{background:#fee2e2;border:none;border-radius:6px;padding:3px 10px;font-size:.72rem;font-weight:700;color:#dc2626;cursor:pointer}
+.required-star{color:#dc2626;font-weight:900;margin-left:2px}
+.required-label{font-size:.7rem;background:#fee2e2;color:#dc2626;font-weight:700;padding:2px 7px;border-radius:6px;margin-left:6px}
+@media(max-width:480px){
+  .nav-grid{gap:10px}
+  .nc-ico-wrap{width:46px;height:46px;font-size:21px}
+  .nav-card .nc-title{font-size:.78rem}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+ 
+<!-- HEADER -->
+<div class="hdr">
+  <div style="font-size:46px;margin-bottom:8px">🏃</div>
+  <div class="hdr-road">🛣️ Road to Glory</div>
+  <h1>Merentas Desa<br>Pendidikan Khas 2026</h1>
+  <div class="hdr-comeback">✨ Come Back Stronger ✨</div>
+  <div class="hdr-team">⚔️ Team Kluang</div>
+  <div class="hdr-sub">Pilihan Saiz &amp; Jenis Baju</div>
+  <div class="badge">📋 Tanjung Puteri Resort Pasir Gudang | 20 – 22 April 2026</div>
+</div>
+ 
+<!-- ══ MAIN PAGE ══ -->
+<div id="mainPage" class="main-page">
+
+  <!-- Nav grid -->
+  <div class="card" style="padding:18px 16px">
+    <div style="font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:#94a3b8;margin-bottom:14px">📂 Menu Utama</div>
+    <div class="nav-grid">
+      <div class="nav-card nc-atlet" onclick="showSection('secAtlet')">
+        <div class="nc-ico-wrap">🏅</div>
+        <div class="nc-title">Senarai Atlet</div>
+        <div class="nc-sub">18 atlet · B12 / B15 / B19</div>
+      </div>
+      <div class="nav-card nc-pgw" onclick="showSection('secPgw')">
+        <div class="nc-ico-wrap">🎖️</div>
+        <div class="nc-title">Pegawai Kontingen</div>
+        <div class="nc-sub">11 pegawai · Kluang</div>
+      </div>
+      <div class="nav-card nc-guru" onclick="showSection('secGuru')">
+        <div class="nc-ico-wrap">👨‍🏫</div>
+        <div class="nc-title">Guru Pengiring</div>
+        <div class="nc-sub">7 guru · Sekolah PPKI</div>
+      </div>
+      <div class="nav-card nc-latihan" onclick="openTraining('overview')">
+        <div class="nc-ico-wrap">🏋️</div>
+        <div class="nc-title">Program Latihan</div>
+        <div class="nc-sub">Fasa 1–4 · B12 · B15 · B19</div>
+      </div>
+      <div class="nav-card nc-tempahan" onclick="showSection('secTempahan')">
+        <div class="nc-tempahan-inner">
+          <div class="nc-ico-wrap" style="flex-shrink:0">🛒</div>
+          <div>
+            <div class="nc-title">Tempahan T-Shirt MSSJ</div>
+            <div class="nc-sub">RM35.00 / helai · Polo Collar &amp; Lengan Panjang · Wajib upload resit</div>
+          </div>
+          <div style="margin-left:auto;text-align:center;flex-shrink:0">
+            <div style="font-size:1.4rem;font-weight:900;color:#ea580c;font-family:Outfit,sans-serif" id="mainTempCount">0</div>
+            <div style="font-size:.62rem;color:#94a3b8">tempahan</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ STATISTIK LENGKAP ══ -->
+  <div class="card" style="padding:18px 16px">
+    <div style="font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:#94a3b8;margin-bottom:4px">📊 Statistik Keseluruhan</div>
+    <div style="font-size:.75rem;color:#bbb;margin-bottom:14px">Semua kumpulan — Atlet · Pegawai · Guru</div>
+
+    <!-- Progress bar -->
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
+      <div style="font-size:.75rem;font-weight:700;color:#1565c0">🎽 Saiz Baju Tersimpan</div>
+      <div style="font-size:.75rem;color:#888"><span id="progDone">0</span> / <span id="progTotal">0</span></div>
+    </div>
+    <div class="prog-bar" style="margin-bottom:18px"><div class="prog-fill" id="progFill" style="width:0%"></div></div>
+
+    <!-- Stat ringkas 3 kumpulan -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:16px">
+      <div style="background:#eff6ff;border-radius:12px;padding:12px 8px;text-align:center;border:1.5px solid #bfdbfe">
+        <div style="font-size:1.4rem;font-weight:900;color:#1d4ed8;font-family:Outfit,sans-serif" id="statAtletDone">0</div>
+        <div style="font-size:.68rem;color:#3b82f6;font-weight:700;margin-top:2px">🏅 Atlet</div>
+        <div style="font-size:.62rem;color:#94a3b8" id="statAtletTotal">/ 18</div>
+      </div>
+      <div style="background:#fffbeb;border-radius:12px;padding:12px 8px;text-align:center;border:1.5px solid #fde68a">
+        <div style="font-size:1.4rem;font-weight:900;color:#d97706;font-family:Outfit,sans-serif" id="statPgwDone">0</div>
+        <div style="font-size:.68rem;color:#f59e0b;font-weight:700;margin-top:2px">🎖️ Pegawai</div>
+        <div style="font-size:.62rem;color:#94a3b8" id="statPgwTotal">/ 11</div>
+      </div>
+      <div style="background:#f7fee7;border-radius:12px;padding:12px 8px;text-align:center;border:1.5px solid #d9f99d">
+        <div style="font-size:1.4rem;font-weight:900;color:#4d7c0f;font-family:Outfit,sans-serif" id="statGuruDone">0</div>
+        <div style="font-size:.68rem;color:#65a30d;font-weight:700;margin-top:2px">👨‍🏫 Guru</div>
+        <div style="font-size:.62rem;color:#94a3b8" id="statGuruTotal">/ 7</div>
+      </div>
+    </div>
+
+    <!-- Jenis baju semua kumpulan -->
+    <div style="font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:#94a3b8;margin-bottom:8px">Mengikut Jenis Baju</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:16px">
+      <div class="stat stat-click" onclick="showNameList('type','Polo Collar','👔 Polo Collar')">
+        <div class="stat-n" id="stPolo">0</div><div class="stat-l">👔 Polo Collar</div>
+      </div>
+      <div class="stat stat-click" onclick="showNameList('type','T-Shirt Lengan Pendek','👕 Lengan Pendek')">
+        <div class="stat-n" id="stShort">0</div><div class="stat-l">👕 Lengan Pendek</div>
+      </div>
+      <div class="stat stat-click" onclick="showNameList('type','T-Shirt Lengan Panjang','🧥 Lengan Panjang')">
+        <div class="stat-n" id="stLong">0</div><div class="stat-l">🧥 Lengan Panjang</div>
+      </div>
+    </div>
+
+    <!-- Saiz baju semua kumpulan -->
+    <div style="font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:#94a3b8;margin-bottom:8px">Mengikut Saiz Baju <span style="font-weight:400;text-transform:none;color:#bbb">— klik untuk lihat nama</span></div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:20px">
+      <div class="stat stat-click" style="padding:8px 4px" onclick="showNameList('size','XS','Saiz XS')"><div class="stat-n" style="font-size:1.1rem" id="sz-XS">0</div><div class="stat-l">XS</div></div>
+      <div class="stat stat-click" style="padding:8px 4px" onclick="showNameList('size','S','Saiz S')"><div class="stat-n" style="font-size:1.1rem" id="sz-S">0</div><div class="stat-l">S</div></div>
+      <div class="stat stat-click" style="padding:8px 4px" onclick="showNameList('size','M','Saiz M')"><div class="stat-n" style="font-size:1.1rem" id="sz-M">0</div><div class="stat-l">M</div></div>
+      <div class="stat stat-click" style="padding:8px 4px" onclick="showNameList('size','L','Saiz L')"><div class="stat-n" style="font-size:1.1rem" id="sz-L">0</div><div class="stat-l">L</div></div>
+      <div class="stat stat-click" style="padding:8px 4px" onclick="showNameList('size','XL','Saiz XL')"><div class="stat-n" style="font-size:1.1rem" id="sz-XL">0</div><div class="stat-l">XL</div></div>
+      <div class="stat stat-click" style="padding:8px 4px" onclick="showNameList('size','2XL','Saiz 2XL')"><div class="stat-n" style="font-size:1.1rem" id="sz-2XL">0</div><div class="stat-l">2XL</div></div>
+      <div class="stat stat-click" style="padding:8px 4px" onclick="showNameList('size','3XL','Saiz 3XL')"><div class="stat-n" style="font-size:1.1rem" id="sz-3XL">0</div><div class="stat-l">3XL</div></div>
+      <div class="stat stat-click" style="padding:8px 4px" onclick="showNameList('size','4XL','Saiz 4XL')"><div class="stat-n" style="font-size:1.1rem" id="sz-4XL">0</div><div class="stat-l">4XL</div></div>
+    </div>
+
+    <!-- Divider -->
+    <div style="height:1px;background:#f0f3f8;margin-bottom:16px"></div>
+
+    <!-- Tempahan T-Shirt stats -->
+    <div style="font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:#c0392b;margin-bottom:8px">🛒 Tempahan T-Shirt MSSJ</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px">
+      <div class="stat stat-click" onclick="showNameList('ttype','Polo Collar','👔 Polo Collar (Tempahan)')">
+        <div class="stat-n" style="color:#c0392b" id="tPolo">0</div><div class="stat-l">👔 Polo Collar</div>
+      </div>
+      <div class="stat stat-click" onclick="showNameList('ttype','T-Shirt Lengan Panjang','🧥 Lengan Panjang (Tempahan)')">
+        <div class="stat-n" style="color:#c0392b" id="tLong">0</div><div class="stat-l">🧥 Lengan Panjang</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n" style="color:#16a34a;font-size:1rem" id="tTotal35">RM0</div><div class="stat-l">💰 Jumlah</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px">
+      <div class="stat stat-click" style="padding:8px 4px" onclick="showNameList('tsize','XS','Saiz XS (Tempahan)')"><div class="stat-n" style="font-size:1.1rem;color:#c0392b" id="tsz-XS">0</div><div class="stat-l">XS</div></div>
+      <div class="stat stat-click" style="padding:8px 4px" onclick="showNameList('tsize','S','Saiz S (Tempahan)')"><div class="stat-n" style="font-size:1.1rem;color:#c0392b" id="tsz-S">0</div><div class="stat-l">S</div></div>
+      <div class="stat stat-click" style="padding:8px 4px" onclick="showNameList('tsize','M','Saiz M (Tempahan)')"><div class="stat-n" style="font-size:1.1rem;color:#c0392b" id="tsz-M">0</div><div class="stat-l">M</div></div>
+      <div class="stat stat-click" style="padding:8px 4px" onclick="showNameList('tsize','L','Saiz L (Tempahan)')"><div class="stat-n" style="font-size:1.1rem;color:#c0392b" id="tsz-L">0</div><div class="stat-l">L</div></div>
+      <div class="stat stat-click" style="padding:8px 4px" onclick="showNameList('tsize','XL','Saiz XL (Tempahan)')"><div class="stat-n" style="font-size:1.1rem;color:#c0392b" id="tsz-XL">0</div><div class="stat-l">XL</div></div>
+      <div class="stat stat-click" style="padding:8px 4px" onclick="showNameList('tsize','2XL','Saiz 2XL (Tempahan)')"><div class="stat-n" style="font-size:1.1rem;color:#c0392b" id="tsz-2XL">0</div><div class="stat-l">2XL</div></div>
+      <div class="stat stat-click" style="padding:8px 4px" onclick="showNameList('tsize','3XL','Saiz 3XL (Tempahan)')"><div class="stat-n" style="font-size:1.1rem;color:#c0392b" id="tsz-3XL">0</div><div class="stat-l">3XL</div></div>
+      <div class="stat stat-click" style="padding:8px 4px" onclick="showNameList('tsize','4XL','Saiz 4XL (Tempahan)')"><div class="stat-n" style="font-size:1.1rem;color:#c0392b" id="tsz-4XL">0</div><div class="stat-l">4XL</div></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SVG TEMPLATES (hidden) -->
+<svg style="display:none">
+  <!-- Polo Collar Shirt -->
+  <symbol id="ico-polo" viewBox="0 0 40 40">
+    <path d="M8 10 L20 6 L32 10 L36 22 L28 22 L28 36 L12 36 L12 22 L4 22 Z" fill="currentColor" opacity=".15"/>
+    <path d="M8 10 L20 6 L32 10 L36 22 L28 22 L28 36 L12 36 L12 22 L4 22 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <!-- collar left -->
+    <path d="M20 6 L16 14 L20 12 L24 14 L20 6Z" fill="currentColor" opacity=".6"/>
+    <!-- placket line -->
+    <line x1="20" y1="12" x2="20" y2="22" stroke="currentColor" stroke-width="1.5"/>
+    <!-- button dots -->
+    <circle cx="20" cy="15" r="1" fill="currentColor"/>
+    <circle cx="20" cy="18.5" r="1" fill="currentColor"/>
+  </symbol>
+ 
+  <!-- T-Shirt Short Sleeve -->
+  <symbol id="ico-short" viewBox="0 0 40 40">
+    <path d="M10 10 L4 18 L12 20 L12 36 L28 36 L28 20 L36 18 L30 10 L24 14 L16 14 Z" fill="currentColor" opacity=".15"/>
+    <path d="M10 10 L4 18 L12 20 L12 36 L28 36 L28 20 L36 18 L30 10 L24 14 L16 14 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <!-- collar -->
+    <path d="M16 14 Q20 18 24 14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  </symbol>
+ 
+  <!-- T-Shirt Long Sleeve -->
+  <symbol id="ico-long" viewBox="0 0 40 40">
+    <path d="M12 10 L4 14 L2 30 L10 30 L12 22 L12 36 L28 36 L28 22 L30 30 L38 30 L36 14 L28 10 L24 14 L16 14 Z" fill="currentColor" opacity=".15"/>
+    <path d="M12 10 L4 14 L2 30 L10 30 L12 22 L12 36 L28 36 L28 22 L30 30 L38 30 L36 14 L28 10 L24 14 L16 14 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <!-- collar -->
+    <path d="M16 14 Q20 18 24 14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  </symbol>
+</svg>
+ 
+<!-- ═══ SECTION: ATLET ═══ -->
+<div id="secAtlet" class="section-page">
+  <button class="back-btn" onclick="showMain()">◀ Kembali ke Menu</button>
+  <div class="card">
+    <div class="sec-title">🏅 Senarai Atlet</div>
+    <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Bil</th><th>Nama</th><th>Kategori</th><th>Jenis Baju</th><th>Saiz</th><th>Simpan</th></tr></thead>
+      <tbody id="bodyAtlet"></tbody>
+    </table>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ SECTION: PEGAWAI ═══ -->
+<div id="secPgw" class="section-page">
+  <button class="back-btn" onclick="showMain()">◀ Kembali ke Menu</button>
+  <div class="card">
+    <div class="sec-title">🎖️ Pegawai Kontingen Kluang</div>
+    <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Bil</th><th>Nama</th><th>Jawatan</th><th>Jenis Baju</th><th>Saiz</th><th>Simpan</th></tr></thead>
+      <tbody id="bodyPgw"></tbody>
+    </table>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ SECTION: GURU PENGIRING ═══ -->
+<div id="secGuru" class="section-page">
+  <button class="back-btn" onclick="showMain()">◀ Kembali ke Menu</button>
+  <div class="card">
+    <div class="sec-title">👨‍🏫 Guru Pengiring</div>
+    <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Bil</th><th>Nama</th><th>Sekolah</th><th>Jenis Baju</th><th>Saiz</th><th>Simpan</th></tr></thead>
+      <tbody id="bodyGuru"></tbody>
+    </table>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ SECTION: TEMPAHAN T-SHIRT MSSJ ═══ -->
+<div id="secTempahan" class="section-page">
+  <button class="back-btn" onclick="showMain()">◀ Kembali ke Menu</button>
+  <div class="card" style="border:2px solid #f39c12">
+
+    <!-- Header info -->
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+      <div style="width:44px;height:44px;background:linear-gradient(135deg,#e67e22,#c0392b);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0">🛒</div>
+      <div>
+        <div style="font-size:1rem;font-weight:800;color:#c0392b">Tempahan T-Shirt MSSJ</div>
+        <div style="font-size:.75rem;color:#7d5a00;margin-top:2px">Merentas Desa Pendidikan Khas 2026</div>
+      </div>
+    </div>
+
+    <div style="background:#fff8e6;border:1.5px solid #f5cba7;border-radius:10px;padding:12px 16px;margin-bottom:20px;display:flex;align-items:flex-start;gap:10px">
+      <span style="font-size:1.3rem">ℹ️</span>
+      <div>
+        <div style="font-size:.82rem;font-weight:800;color:#c0392b">TEMPAHAN SUKARELA — Tiada Paksaan</div>
+        <div style="font-size:.78rem;color:#7d5a00;margin-top:2px;line-height:1.6">Harga: <strong>RM 35.00 / helai</strong> &nbsp;·&nbsp; Polo Collar &amp; T-Shirt Lengan Panjang sahaja</div>
+      </div>
+    </div>
+
+    <!-- UPLOAD RESIT — MEDAN WAJIB -->
+    <div style="margin-bottom:20px">
+      <div style="font-size:.82rem;font-weight:800;color:#1a2a4a;margin-bottom:6px;display:flex;align-items:center;gap:6px">
+        📎 Upload Resit Pembayaran
+        <span class="required-star">★</span>
+        <span class="required-label">WAJIB</span>
+      </div>
+      <div style="font-size:.72rem;color:#888;margin-bottom:8px">Resit mesti dimuatnaik sebelum tempahan dianggap sah. Format: JPG, PNG, atau PDF (maks 5MB).</div>
+
+      <!-- Upload zone -->
+      <div class="receipt-zone" id="receiptZone" onclick="document.getElementById('receiptFile').click()">
+        <input type="file" id="receiptFile" accept="image/*,.pdf" onchange="handleReceiptUpload(this)">
+        <span class="rz-ico">📄</span>
+        <div class="rz-title">Klik untuk pilih fail resit</div>
+        <div class="rz-sub">atau seret dan lepas di sini · JPG / PNG / PDF</div>
+      </div>
+
+      <!-- Preview -->
+      <div class="receipt-preview" id="receiptPreview">
+        <img id="receiptImg" src="" alt="Resit">
+        <div class="rp-name" id="receiptNameBar">
+          <span id="receiptFileName">—</span>
+          <button class="rp-remove" onclick="removeReceipt()">✕ Buang</button>
+        </div>
+      </div>
+
+      <!-- Validation message -->
+      <div id="receiptValidMsg" style="display:none;margin-top:8px;padding:8px 12px;background:#fee2e2;border:1px solid #fca5a5;border-radius:8px;font-size:.75rem;font-weight:700;color:#dc2626">
+        ⚠️ Sila upload resit pembayaran sebelum simpan tempahan.
+      </div>
+      <div id="receiptOkMsg" style="display:none;margin-top:8px;padding:8px 12px;background:#dcfce7;border:1px solid #86efac;border-radius:8px;font-size:.75rem;font-weight:700;color:#15803d">
+        ✅ Resit berjaya dimuat naik.
+      </div>
+    </div>
+
+    <div style="height:1px;background:#f0e0c8;margin-bottom:20px"></div>
+
+    <!-- Pegawai -->
+    <div style="font-size:.78rem;font-weight:800;color:#7d5a00;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px">🎖️ Pegawai Kontingen</div>
+    <div class="tbl-wrap" style="margin-bottom:20px">
+    <table>
+      <thead><tr><th>Bil</th><th>Nama</th><th>Jawatan</th><th>Jenis Baju</th><th>Saiz</th><th>📎 Resit <span style="color:#dc2626">★</span></th><th>Simpan</th></tr></thead>
+      <tbody id="t-bodyPgw"></tbody>
+    </table>
+    </div>
+
+    <!-- Guru -->
+    <div style="font-size:.78rem;font-weight:800;color:#7d5a00;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px">👨‍🏫 Guru Pengiring</div>
+    <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Bil</th><th>Nama</th><th>Sekolah</th><th>Jenis Baju</th><th>Saiz</th><th>📎 Resit <span style="color:#dc2626">★</span></th><th>Simpan</th></tr></thead>
+      <tbody id="t-bodyGuru"></tbody>
+    </table>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER ACTIONS -->
+<div id="footerActions" style="display:none">
+  <div class="card">
+    <div class="footer-bar">
+      <button class="btn btn-export" onclick="exportCSV()">📥 Export CSV</button>
+      <button class="btn btn-reset" onclick="confirmReset()">🔄 Reset Semua</button>
+    </div>
+  </div>
+</div>
+ 
+</div><!-- end wrap -->
+ 
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- NAME LIST POPUP -->
+<div id="namePopup" onclick="closeNamePopup(event)">
+  <div class="name-popup-card">
+    <div class="name-popup-head">
+      <div class="name-popup-title" id="namePopupTitle">Senarai</div>
+      <button class="name-popup-close" onclick="closeNamePopup()">✕</button>
+    </div>
+    <div class="name-popup-body" id="namePopupBody"></div>
+  </div>
+</div>
+
+<!-- SIDEBAR TOGGLE BUTTON -->
+<button class="sb-toggle" onclick="toggleSidebar()" title="Program Latihan">
+  <span class="sb-tog-icon">🏆</span>
+  <span class="sb-tog-pulse"></span>
+</button>
+
+<!-- SIDEBAR BACKDROP -->
+<div class="sb-backdrop" id="sbBackdrop" onclick="closeSidebar()"></div>
+
+<!-- SIDEBAR DRAWER -->
+<div class="sb-drawer" id="sbDrawer">
+  <div class="sb-head">
+    <div class="sb-head-top">
+      <div class="sb-head-brand">
+        <div class="sb-head-logo">&#x2694;&#xFE0F;</div>
+        <div>
+          <div class="sb-head-title">Program Latihan</div>
+          <div class="sb-head-sub">Team Kluang 2026</div>
+        </div>
+      </div>
+      <button class="sb-close" onclick="closeSidebar()">&#x2715;</button>
+    </div>
+    <div class="sb-meta-row">
+      <span class="sb-meta-chip"><span style="color:#4ade80;font-size:8px">&#x25CF;</span> Aktif</span>
+      <span class="sb-meta-chip">&#x1F4C5; 29 Mac-29 Apr</span>
+      <span class="sb-meta-chip">&#x1F3C6; Top 5 Johor</span>
+    </div>
+  </div>
+  <div class="sb-nav-list">
+
+    <!-- ── FASA LATIHAN ── -->
+    <div class="sb-section-label">📅 FASA LATIHAN</div>
+    <div class="sb-nav-item" onclick="openTraining('fasa1')">
+      <div class="sb-nav-icon" style="background:rgba(99,102,241,.18);font-size:20px">🏗️</div>
+      <div class="sb-nav-text"><div class="sb-nav-title">Fasa 1 — Asas Aerobik</div><div class="sb-nav-desc">Minggu 1–3 · Bina ketahanan &amp; daya tahan</div></div>
+      <div class="sb-nav-arrow">›</div>
+    </div>
+    <div class="sb-nav-item" onclick="openTraining('fasa2')">
+      <div class="sb-nav-icon" style="background:rgba(245,158,11,.18);font-size:20px">⚡</div>
+      <div class="sb-nav-text"><div class="sb-nav-title">Fasa 2 — Kekuatan &amp; Kelajuan</div><div class="sb-nav-desc">Minggu 4–6 · Interval &amp; hill training</div></div>
+      <div class="sb-nav-arrow">›</div>
+    </div>
+    <div class="sb-nav-item" onclick="openTraining('fasa3')">
+      <div class="sb-nav-icon" style="background:rgba(236,72,153,.18);font-size:20px">🎯</div>
+      <div class="sb-nav-text"><div class="sb-nav-title">Fasa 3 — Spesifik Perlumbaan</div><div class="sb-nav-desc">Minggu 7–8 · Simulasi lumba &amp; taktik</div></div>
+      <div class="sb-nav-arrow">›</div>
+    </div>
+    <div class="sb-nav-item" onclick="openTraining('fasa4')">
+      <div class="sb-nav-icon" style="background:rgba(16,185,129,.18);font-size:20px">🏁</div>
+      <div class="sb-nav-text"><div class="sb-nav-title">Fasa 4 — Tapering &amp; Puncak</div><div class="sb-nav-desc">Minggu 9–10 · Kurangkan beban, puncak prestasi</div></div>
+      <div class="sb-nav-arrow">›</div>
+    </div>
+
+    <!-- ── PROGRAM MENGIKUT KATEGORI ── -->
+    <div class="sb-section-label">👦 PROGRAM MENGIKUT UMUR</div>
+    <div class="sb-nav-item" onclick="openTraining('b12')">
+      <div class="sb-nav-icon" style="background:rgba(59,130,246,.18)">
+        <span style="font-size:13px;font-weight:900;color:#3b82f6;line-height:1">B<br><span style="font-size:17px">12</span></span>
+      </div>
+      <div class="sb-nav-text"><div class="sb-nav-title">Program B12 / P12</div><div class="sb-nav-desc">Bawah 12 tahun · 4km · Asas teknik lari</div></div>
+      <div class="sb-nav-arrow">›</div>
+    </div>
+    <div class="sb-nav-item" onclick="openTraining('b15')">
+      <div class="sb-nav-icon" style="background:rgba(168,85,247,.18)">
+        <span style="font-size:13px;font-weight:900;color:#a855f7;line-height:1">B<br><span style="font-size:17px">15</span></span>
+      </div>
+      <div class="sb-nav-text"><div class="sb-nav-title">Program B15 / P15</div><div class="sb-nav-desc">Bawah 15 tahun · 6km · Pembinaan laktat</div></div>
+      <div class="sb-nav-arrow">›</div>
+    </div>
+    <div class="sb-nav-item" onclick="openTraining('b19')">
+      <div class="sb-nav-icon" style="background:rgba(239,68,68,.18)">
+        <span style="font-size:13px;font-weight:900;color:#ef4444;line-height:1">B<br><span style="font-size:17px">19</span></span>
+      </div>
+      <div class="sb-nav-text"><div class="sb-nav-title">Program B19 / P19</div><div class="sb-nav-desc">Bawah 19 tahun · 8km · Latihan intensiti tinggi</div></div>
+      <div class="sb-nav-arrow">›</div>
+    </div>
+
+    <!-- ── PANDUAN JURULATIH ── -->
+    <div class="sb-section-label">🎓 PANDUAN JURULATIH NUBIS</div>
+    <div class="sb-nav-item" onclick="openTraining('coach_fasa1')">
+      <div class="sb-nav-icon" style="background:rgba(99,102,241,.18);font-size:19px">📋</div>
+      <div class="sb-nav-text"><div class="sb-nav-title">Cara Jalankan Fasa 1</div><div class="sb-nav-desc">Setup sesi · Warm-up · Cool-down · Rekod</div></div>
+      <div class="sb-nav-arrow">›</div>
+    </div>
+    <div class="sb-nav-item" onclick="openTraining('coach_fasa2')">
+      <div class="sb-nav-icon" style="background:rgba(245,158,11,.18);font-size:19px">📋</div>
+      <div class="sb-nav-text"><div class="sb-nav-title">Cara Jalankan Fasa 2</div><div class="sb-nav-desc">Interval · Hill training · Tanda amaran</div></div>
+      <div class="sb-nav-arrow">›</div>
+    </div>
+    <div class="sb-nav-item" onclick="openTraining('coach_fasa3')">
+      <div class="sb-nav-icon" style="background:rgba(236,72,153,.18);font-size:19px">📋</div>
+      <div class="sb-nav-text"><div class="sb-nav-title">Cara Jalankan Fasa 3</div><div class="sb-nav-desc">Race simulation · Pacing · Latihan mental</div></div>
+      <div class="sb-nav-arrow">›</div>
+    </div>
+    <div class="sb-nav-item" onclick="openTraining('coach_fasa4')">
+      <div class="sb-nav-icon" style="background:rgba(16,185,129,.18);font-size:19px">📋</div>
+      <div class="sb-nav-text"><div class="sb-nav-title">Cara Urus Tapering</div><div class="sb-nav-desc">Jelaskan kepada atlet · Pemakanan · Hari lumba</div></div>
+      <div class="sb-nav-arrow">›</div>
+    </div>
+    <div class="sb-nav-item" onclick="openTraining('coach_b12')">
+      <div class="sb-nav-icon" style="background:rgba(59,130,246,.18);font-size:19px">📋</div>
+      <div class="sb-nav-text"><div class="sb-nav-title">Cara Latih B12 / P12</div><div class="sb-nav-desc">Pendekatan kanak-kanak · Fun-based · Teknik asas</div></div>
+      <div class="sb-nav-arrow">›</div>
+    </div>
+    <div class="sb-nav-item" onclick="openTraining('coach_b15')">
+      <div class="sb-nav-icon" style="background:rgba(168,85,247,.18);font-size:19px">📋</div>
+      <div class="sb-nav-text"><div class="sb-nav-title">Cara Latih B15 / P15</div><div class="sb-nav-desc">Disiplin · Tempo run · Dinamik kumpulan</div></div>
+      <div class="sb-nav-arrow">›</div>
+    </div>
+    <div class="sb-nav-item" onclick="openTraining('coach_b19')">
+      <div class="sb-nav-icon" style="background:rgba(239,68,68,.18);font-size:19px">📋</div>
+      <div class="sb-nav-text"><div class="sb-nav-title">Cara Latih B19 / P19</div><div class="sb-nav-desc">Intensiti tinggi · Mentaliti · Overtraining</div></div>
+      <div class="sb-nav-arrow">›</div>
+    </div>
+
+    <!-- ── SOKONGAN ── -->
+    <div class="sb-section-label">🛡️ SOKONGAN</div>
+    <div class="sb-nav-item" onclick="openTraining('diet')">
+      <div class="sb-nav-icon" style="background:rgba(16,185,129,.15);font-size:20px">🥗</div>
+      <div class="sb-nav-text"><div class="sb-nav-title">Nutrisi &amp; Hidrasi</div><div class="sb-nav-desc">Pelan pemakanan sebelum, semasa &amp; selepas</div></div>
+      <div class="sb-nav-arrow">›</div>
+    </div>
+    <div class="sb-nav-item" onclick="openTraining('safety')">
+      <div class="sb-nav-icon" style="background:rgba(239,68,68,.12);font-size:20px">🚑</div>
+      <div class="sb-nav-text"><div class="sb-nav-title">Keselamatan &amp; Kecemasan</div><div class="sb-nav-desc">Protokol fisio &amp; pengurusan kecederaan</div></div>
+      <div class="sb-nav-arrow">›</div>
+    </div>
+    <div class="sb-nav-item" onclick="openTraining('raceday')">
+      <div class="sb-nav-icon" style="background:rgba(184,134,11,.15);font-size:20px">🏆</div>
+      <div class="sb-nav-text"><div class="sb-nav-title">Strategi Hari Lumba</div><div class="sb-nav-desc">20–22 Apr · Tanjung Puteri Resort</div></div>
+      <div class="sb-nav-arrow">›</div>
+    </div>
+
+  </div>
+  <div class="sb-foot">
+    <button class="sb-foot-btn" onclick="openTraining('overview')">🚀 Buka Panduan Penuh</button>
+  </div>
+</div>
+
+<!-- TRAINING MODAL -->
+<div class="tp-modal" id="tpModal">
+  <div class="tp-wrap">
+    <div class="tp-topbar">
+      <div class="tp-topbar-left">
+        <div class="tp-icon-box" id="tpModalIcon">&#x1F3E0;</div>
+        <div>
+          <div class="tp-topbar-title" id="tpModalTitle">Program Latihan</div>
+          <div class="tp-topbar-sub">Merentas Desa PPKI Kluang 2026</div>
+        </div>
+      </div>
+      <button class="tp-close" onclick="closeTraining()">&#x2715; Tutup</button>
+    </div>
+    <div style="background:#fff;padding:10px 18px;border-bottom:1px solid #e2e8f0;display:flex;gap:5px;flex-wrap:wrap">
+      <button class="tp-tab active" onclick="switchTpTab(this,'overview')">🏠 Overview</button>
+      <button class="tp-tab" onclick="switchTpTab(this,'fasa1')">🏗️ Fasa 1</button>
+      <button class="tp-tab" onclick="switchTpTab(this,'fasa2')">⚡ Fasa 2</button>
+      <button class="tp-tab" onclick="switchTpTab(this,'fasa3')">🎯 Fasa 3</button>
+      <button class="tp-tab" onclick="switchTpTab(this,'fasa4')">🏁 Fasa 4</button>
+      <button class="tp-tab" onclick="switchTpTab(this,'b12')">🔵 B12</button>
+      <button class="tp-tab" onclick="switchTpTab(this,'b15')">🟣 B15</button>
+      <button class="tp-tab" onclick="switchTpTab(this,'b19')">🔴 B19</button>
+      <button class="tp-tab" onclick="switchTpTab(this,'diet')">🥗 Nutrisi</button>
+      <button class="tp-tab" onclick="switchTpTab(this,'safety')">🚑 Keselamatan</button>
+      <button class="tp-tab" onclick="switchTpTab(this,'raceday')">🏆 Hari Lumba</button>
+      <button class="tp-tab" style="background:#fef9c3;border-color:#fde047;color:#854d0e" onclick="switchTpTab(this,'coach_fasa1')">📋 Coach F1</button>
+      <button class="tp-tab" style="background:#fef9c3;border-color:#fde047;color:#854d0e" onclick="switchTpTab(this,'coach_fasa2')">📋 Coach F2</button>
+      <button class="tp-tab" style="background:#fef9c3;border-color:#fde047;color:#854d0e" onclick="switchTpTab(this,'coach_fasa3')">📋 Coach F3</button>
+      <button class="tp-tab" style="background:#fef9c3;border-color:#fde047;color:#854d0e" onclick="switchTpTab(this,'coach_fasa4')">📋 Coach F4</button>
+      <button class="tp-tab" style="background:#fef9c3;border-color:#fde047;color:#854d0e" onclick="switchTpTab(this,'coach_b12')">📋 Coach B12</button>
+      <button class="tp-tab" style="background:#fef9c3;border-color:#fde047;color:#854d0e" onclick="switchTpTab(this,'coach_b15')">📋 Coach B15</button>
+      <button class="tp-tab" style="background:#fef9c3;border-color:#fde047;color:#854d0e" onclick="switchTpTab(this,'coach_b19')">📋 Coach B19</button>
+    </div>
+    <div class="tp-inner" id="tpInner"></div>
+  </div>
+</div>
+ 
+<!-- RESET CONFIRM MODAL -->
+<div id="resetOvl" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:300;display:none;align-items:center;justify-content:center;padding:20px">
+  <div style="background:#fff;border-radius:16px;padding:28px 26px;max-width:360px;width:100%;box-shadow:0 8px 40px rgba(0,0,0,.3);text-align:center">
+    <div style="font-size:2.5rem;margin-bottom:10px">⚠️</div>
+    <h3 style="font-size:1rem;font-weight:800;color:#c0392b;margin-bottom:8px">Reset Semua Data?</h3>
+    <p style="font-size:.85rem;color:#666;margin-bottom:22px;line-height:1.5">Semua pilihan saiz dan jenis baju akan dipadam.<br>Tindakan ini tidak boleh dibatalkan.</p>
+    <div style="display:flex;gap:10px">
+      <button onclick="closeResetModal()" style="flex:1;padding:12px;border:2px solid #ddd;border-radius:10px;background:#f5f5f5;font-size:.88rem;font-weight:700;cursor:pointer;color:#555">◀ Batal</button>
+      <button onclick="doReset()" style="flex:1;padding:12px;border:none;border-radius:10px;background:linear-gradient(135deg,#c0392b,#922b21);color:#fff;font-size:.88rem;font-weight:700;cursor:pointer;box-shadow:0 3px 10px rgba(192,57,43,.35)">🗑️ Ya, Reset</button>
+    </div>
+  </div>
+</div>
+ 
+<!-- EDIT OVERLAY -->
+<div id="editOvl">
+  <div class="edit-card">
+    <h3>✏️ Kemaskini Pilihan</h3>
+    <div style="background:#f0f5ff;border-radius:10px;padding:10px 14px;margin-bottom:16px">
+      <div style="font-size:.78rem;color:#666">Peserta</div>
+      <div id="editName" style="font-weight:800;color:#0a3d62;font-size:.95rem"></div>
+    </div>
+    <div class="eg">
+      <label>Jenis Baju</label>
+      <div class="type-row" id="editTypeRow">
+        <div class="tb" data-t="Polo Collar" onclick="setEditType(this)">
+          <svg><use href="#ico-polo"/></svg><span>Polo<br>Collar</span>
+        </div>
+        <div class="tb" data-t="T-Shirt Lengan Pendek" onclick="setEditType(this)">
+          <svg><use href="#ico-short"/></svg><span>Lengan<br>Pendek</span>
+        </div>
+        <div class="tb" data-t="T-Shirt Lengan Panjang" onclick="setEditType(this)">
+          <svg><use href="#ico-long"/></svg><span>Lengan<br>Panjang</span>
+        </div>
+      </div>
+    </div>
+    <div class="eg">
+      <label>Saiz Baju</label>
+      <div class="size-row" id="editSizeRow">
+        <div class="sb" data-s="XS" onclick="setEditSize(this)">XS</div>
+        <div class="sb" data-s="S" onclick="setEditSize(this)">S</div>
+        <div class="sb" data-s="M" onclick="setEditSize(this)">M</div>
+        <div class="sb" data-s="L" onclick="setEditSize(this)">L</div>
+        <div class="sb" data-s="XL" onclick="setEditSize(this)">XL</div>
+        <div class="sb" data-s="2XL" onclick="setEditSize(this)">2XL</div>
+        <div class="sb" data-s="3XL" onclick="setEditSize(this)">3XL</div>
+        <div class="sb" data-s="4XL" onclick="setEditSize(this)">4XL</div>
+      </div>
+    </div>
+    <div style="display:flex;gap:10px;margin-top:18px">
+      <button class="btn btn-reset" style="flex:1" onclick="closeEdit()">◀ Batal</button>
+      <button class="btn btn-primary" style="flex:2" onclick="saveEdit()">✅ Simpan</button>
+    </div>
+  </div>
+</div>
+ 
+<script>
+// ══════════════════════════════════════
+// DATA
+// ══════════════════════════════════════
+const ATLET = [
+  // L19
+  {nama:"Mohamad Nur Danish Bin Huzaini",info:"L19 · SMK Sultan Abdul Jalil"},
+  {nama:"Mohamad Harraz Zakwan Bin Hasri",info:"L19 · SMK Sultan Abdul Jalil"},
+  {nama:"Muhammad Nasiruddin Bin Rasman",info:"L19 · SMK Tun Hussein Onn"},
+  // P19
+  {nama:"Kaseh Raudah Binti Mohd Shah",info:"P19 · SMK Kahang"},
+  {nama:"Hana Adeffa Hanania Binti Mohd Shahrul",info:"P19 · SMK Bandar T6"},
+  {nama:"Nurhafizah Batrisha Binti Mohd Suhaimi",info:"P19 · SMK Sultan Abdul Jalil"},
+  // L15
+  {nama:"Muhammad Danial Rezkillah Bin Zaharynizam",info:"L15 · SMK Bandar T6"},
+  {nama:"Adib Zaki Bin Md Masrol",info:"L15 · SMK Seri Lalang"},
+  {nama:"Muhammad Aiman Mahathir Bin Sohoiri",info:"L15 · SMK Sultan Abdul Jalil"},
+  // P15
+  {nama:"Nur Amira Khairina Binti Khairul Nizam",info:"P15 · SMK Simpang Renggam"},
+  {nama:"Nurul Ain Syazalina Binti Mohd Khairul",info:"P15 · SMK Layang Layang"},
+  {nama:"Nur Alya Najwa Binti Shamsul Bahari",info:"P15 · SMK Simpang Renggam"},
+  // L12
+  {nama:"Norsyazfazel Bin Husin",info:"L12 · SK Kahang"},
+  {nama:"Muhammad Arsyad Irfan Bin Mohd Emran",info:"L12 · SK Seri Kg Tengah"},
+  {nama:"Muhammad Amirul Asyraf Bin Mohd Nazri",info:"L12 · SK Dato Onn Jaafar"},
+  // P12
+  {nama:"Zahra Syaqillah Binti Kamaluddin",info:"P12 · SK Seri Maju Jaya"},
+  {nama:"Nur Damia Binti Malik Redzuan",info:"P12 · SK Dato Syed Zain Al Shahab"},
+  {nama:"Nur Aira Badriyah Binti Abu",info:"P12 · SK Lelaki Bandar"},
+];
+ 
+const PEGAWAI = [
+  {nama:"Ahmad Radzlan Bin Mohamed Yusof",info:"Penolong PPD Pendidikan Khas"},
+  {nama:"Siti Aisyah Binti Taha",info:"Penolong PPD Pendidikan Khas"},
+  {nama:"Mohd Iman Arif Bin Jamaludin",info:"Pengerusi Teknik MD PK MSSD Kluang"},
+  {nama:"Mohd Fazli Bin Md Aman",info:"Penolong Pengerusi Teknik"},
+  {nama:"Muhammad Muizzuddin Bin Mahbut",info:"Pengurus Pasukan"},
+  {nama:"Noorzarina Binti Ab Llah",info:"Penolong Pengurus Pasukan"},
+  {nama:"Nurul Zafirah Binti Jeffery",info:"Ketua Jurulatih"},
+  {nama:"Hafiza Binti Kadir",info:"Jurulatih"},
+  {nama:"Lily Farhana Binti Md Yasin",info:"Jurulatih"},
+  {nama:"Muhammad Aznil Bin Mazlan",info:"Jurulatih"},
+  {nama:"Nur Zahratul Syazwani Binti Abdul Ghani",info:"Fisio & Bantu Mula"},
+];
+ 
+const GURU = [
+  {nama:"Wan Muhammad Faez Bin Wan Azizi",info:"SK Seri Kg Tengah"},
+  {nama:"Noor Zulaikha Binti Zahadi",info:"SMK Bandar T6"},
+  {nama:"Nur Shamimi Binti Hassim",info:"SMK Seri Lalang"},
+  {nama:"Saiful Anwar Bin Mustaffa",info:"SMK Lelaki Bandar"},
+  {nama:"Ainun Syakilla Binti Kamaruddin",info:"SMK Kahang"},
+  {nama:"Nasir Bin Nyompah",info:"SK Kahang"},
+  {nama:"Norhayati Binti Taip",info:"SMK Layang Layang"},
+];
+ 
+const SIZES  = ["XS","S","M","L","XL","2XL","3XL","4XL"];
+const SIZES2 = ["XS","S","M","L","XL","2XL","3XL","4XL"];
+const TYPES = [
+  {key:"Polo Collar",     icon:"#ico-polo",  cls:"active-polo",  lbl:"Polo<br>Collar"},
+  {key:"T-Shirt Lengan Pendek", icon:"#ico-short", cls:"active-short", lbl:"Lengan<br>Pendek"},
+  {key:"T-Shirt Lengan Panjang",icon:"#ico-long",  cls:"active-long",  lbl:"Lengan<br>Panjang"},
+];
+ 
+// STATE: keyed by "group-index"
+let DATA = JSON.parse(localStorage.getItem('mssj2026v2')||'{}');
+// TEMPAHAN STATE
+let DATA2 = JSON.parse(localStorage.getItem('mssj2026t')||'{}');
+let RECEIPT2 = JSON.parse(localStorage.getItem('mssj2026receipt2')||'{}');
+ 
+const TYPES2 = [
+  {key:"Polo Collar",      icon:"#ico-polo", cls:"active-polo", lbl:"Polo<br>Collar"},
+  {key:"T-Shirt Lengan Panjang", icon:"#ico-long", cls:"active-long", lbl:"Lengan<br>Panjang"},
+];
+ 
+// edit state
+let eKey='', eType='', eSize='';
+ 
+// ══════════════════════════════════════
+// RENDER
+// ══════════════════════════════════════
+function typeActiveCls(t){
+  const found=TYPES.find(x=>x.key===t);
+  return found?found.cls:'';
+}
+ 
+function renderTypeButtons(key,curType){
+  return TYPES.map(t=>`
+    <div class="tb ${curType===t.key?t.cls:''}" data-t="${t.key}" onclick="setType('${key}','${t.key}',this)">
+      <svg><use href="${t.icon}"/></svg><span>${t.lbl}</span>
+    </div>`).join('');
+}
+function renderSizeButtons(key,curSize){
+  return SIZES.map(s=>`
+    <div class="sb ${curSize===s?'active':''}" onclick="setSize('${key}','${s}',this)">${s}</div>
+  `).join('');
+}
+function renderSaveBtn(key,done){
+  if(done){
+    return `<button id="savebtn-${key}" onclick="saveRow('${key}')"
+      style="white-space:nowrap;padding:7px 11px;border:none;border-radius:9px;font-size:.72rem;font-weight:800;cursor:pointer;background:#d4edda;color:#155724;display:flex;align-items:center;gap:4px;min-width:80px;justify-content:center">
+      ✅ Tersimpan
+    </button>`;
+  }
+  return `<button id="savebtn-${key}" onclick="saveRow('${key}')"
+    style="white-space:nowrap;padding:7px 11px;border:none;border-radius:9px;font-size:.72rem;font-weight:800;cursor:pointer;background:linear-gradient(135deg,#1565c0,#0a3d62);color:#fff;box-shadow:0 2px 8px rgba(21,101,192,.3);display:flex;align-items:center;gap:4px;min-width:80px;justify-content:center">
+    💾 Simpan
+  </button>`;
+}
+function renderRows(arr,group,tbody){
+  const el=document.getElementById(tbody);
+  el.innerHTML=arr.map((p,i)=>{
+    const key=`${group}-${i}`;
+    const d=DATA[key]||{};
+    const done=!!(d.type&&d.size&&d.saved);
+    return `<tr id="tr-${key}" class="${done?'done':''}">
+      <td class="num">${i+1}</td>
+      <td class="nama">${p.nama}<small>${p.info}</small></td>
+      <td class="cat"><span style="font-size:.72rem;color:#666">${p.info.split('·')[0].trim()}</span></td>
+      <td>
+        <div class="type-row" id="type-${key}">${renderTypeButtons(key,d.type||'')}</div>
+      </td>
+      <td>
+        <div class="size-row" id="size-${key}">${renderSizeButtons(key,d.size||'')}</div>
+      </td>
+      <td style="text-align:center">${renderSaveBtn(key,done)}</td>
+    </tr>`;
+  }).join('');
+}
+function renderAll(){
+  renderRows(ATLET,'a','bodyAtlet');
+  renderRows(PEGAWAI,'p','bodyPgw');
+  renderRows(GURU,'g','bodyGuru');
+  renderAll2();
+  updateStats();
+}
+ 
+// ══════════════════════════════════════
+// INTERACTIONS
+// ══════════════════════════════════════
+function setType(key,type,el){
+  if(!DATA[key])DATA[key]={};
+  DATA[key].type=type;
+  DATA[key].saved=false; // reset saved state on change
+  const cont=document.getElementById('type-'+key);
+  cont.querySelectorAll('.tb').forEach(b=>{
+    b.classList.remove('active-polo','active-short','active-long');
+    if(b.dataset.t===type) b.classList.add(typeActiveCls(type));
+  });
+  resetSaveBtn(key);
+  autoSave();
+}
+function setSize(key,size,el){
+  if(!DATA[key])DATA[key]={};
+  DATA[key].size=size;
+  DATA[key].saved=false; // reset saved state on change
+  const cont=document.getElementById('size-'+key);
+  cont.querySelectorAll('.sb').forEach(b=>{
+    b.classList.toggle('active',b.textContent===size);
+  });
+  resetSaveBtn(key);
+  autoSave();
+}
+function resetSaveBtn(key){
+  const btn=document.getElementById('savebtn-'+key);
+  if(!btn)return;
+  btn.style.background='linear-gradient(135deg,#1565c0,#0a3d62)';
+  btn.style.color='#fff';
+  btn.innerHTML='💾 Simpan';
+  const tr=document.getElementById('tr-'+key);
+  if(tr)tr.className='';
+  updateStats();
+}
+function saveRow(key){
+  const d=DATA[key]||{};
+  if(!d.type){showToast('⚠️ Pilih jenis baju dahulu!','err');return;}
+  if(!d.size){showToast('⚠️ Pilih saiz baju dahulu!','err');return;}
+  DATA[key].saved=true;
+  autoSave();
+  // update button to "Tersimpan"
+  const btn=document.getElementById('savebtn-'+key);
+  if(btn){
+    btn.style.background='#d4edda';
+    btn.style.color='#155724';
+    btn.style.boxShadow='none';
+    btn.innerHTML='✅ Tersimpan';
+  }
+  const tr=document.getElementById('tr-'+key);
+  if(tr)tr.className='done';
+  updateStats();
+  showToast('✅ Disimpan!','ok');
+}
+function checkDone(key){
+  const d=DATA[key]||{};
+  const done=!!(d.type&&d.size&&d.saved);
+  const tr=document.getElementById('tr-'+key);
+  if(tr)tr.className=done?'done':'';
+  updateStats();
+}
+function updateStats(){
+  const all=Object.values(DATA);
+  const done=all.filter(d=>d.type&&d.size&&d.saved);
+  const total=ATLET.length+PEGAWAI.length+GURU.length;
+
+  // Main page progress
+  const mpd=document.getElementById('progDone'); if(mpd) mpd.textContent=done.length;
+  const mpt=document.getElementById('progTotal'); if(mpt) mpt.textContent=total;
+  const mpf=document.getElementById('progFill'); if(mpf) mpf.style.width=Math.round(done.length/total*100)+'%';
+
+  // Per-group stats
+  const atletDone = ATLET.map((_,i)=>DATA['a-'+i]||{}).filter(d=>d.type&&d.size&&d.saved).length;
+  const pgwDone   = PEGAWAI.map((_,i)=>DATA['p-'+i]||{}).filter(d=>d.type&&d.size&&d.saved).length;
+  const guruDone  = GURU.map((_,i)=>DATA['g-'+i]||{}).filter(d=>d.type&&d.size&&d.saved).length;
+  const sad=document.getElementById('statAtletDone'); if(sad) sad.textContent=atletDone;
+  const spd=document.getElementById('statPgwDone');   if(spd) spd.textContent=pgwDone;
+  const sgd=document.getElementById('statGuruDone');  if(sgd) sgd.textContent=guruDone;
+  const sat=document.getElementById('statAtletTotal'); if(sat) sat.textContent='/ '+ATLET.length;
+  const spt=document.getElementById('statPgwTotal');   if(spt) spt.textContent='/ '+PEGAWAI.length;
+  const sgt=document.getElementById('statGuruTotal');  if(sgt) sgt.textContent='/ '+GURU.length;
+
+  // Jenis baju
+  const sp=document.getElementById('stPolo');  if(sp) sp.textContent=done.filter(d=>d.type==='Polo Collar').length;
+  const ss=document.getElementById('stShort'); if(ss) ss.textContent=done.filter(d=>d.type==='T-Shirt Lengan Pendek').length;
+  const sl=document.getElementById('stLong');  if(sl) sl.textContent=done.filter(d=>d.type==='T-Shirt Lengan Panjang').length;
+
+  // Saiz baju
+  SIZES.forEach(s=>{ const el=document.getElementById('sz-'+s); if(el) el.textContent=done.filter(d=>d.size===s).length; });
+
+  // Tempahan MSSJ
+  const allT=Object.values(DATA2);
+  const doneT=allT.filter(d=>d.type&&d.size&&d.saved);
+  const totalT=PEGAWAI.length+GURU.length;
+  const tpd=document.getElementById('tProgDone'); if(tpd) tpd.textContent=doneT.length;
+  const tpf=document.getElementById('tProgFill'); if(tpf) tpf.style.width=Math.round(doneT.length/totalT*100)+'%';
+  const tpo=document.getElementById('tPolo');  if(tpo) tpo.textContent=doneT.filter(d=>d.type==='Polo Collar').length;
+  const tlo=document.getElementById('tLong');  if(tlo) tlo.textContent=doneT.filter(d=>d.type==='T-Shirt Lengan Panjang').length;
+  const tt35=document.getElementById('tTotal35'); if(tt35) tt35.textContent='RM'+(doneT.length*35);
+  const tb=document.getElementById('tTotal35b'); if(tb) tb.textContent='RM'+(doneT.length*35);
+  const tbc=document.getElementById('tempBarCount'); if(tbc) tbc.textContent=doneT.length;
+  const mtc=document.getElementById('mainTempCount'); if(mtc) mtc.textContent=doneT.length;
+  SIZES2.forEach(s=>{ const el=document.getElementById('tsz-'+s); if(el) el.textContent=doneT.filter(d=>d.size===s).length; });
+}
+function autoSave(){
+  localStorage.setItem('mssj2026v2',JSON.stringify(DATA));
+}
+ 
+// ══════════════════════════════════════
+// TEMPAHAN SECTION
+// ══════════════════════════════════════
+function renderTypeButtons2(key,curType){
+  return TYPES2.map(t=>`
+    <div class="tb ${curType===t.key?t.cls:''}" data-t="${t.key}" onclick="setType2('${key}','${t.key}',this)">
+      <svg><use href="${t.icon}"/></svg><span>${t.lbl}</span>
+    </div>`).join('');
+}
+function renderSaveBtn2(key,done,hasReceipt){
+  if(done){
+    return `<button id="savebtn2-${key}" onclick="saveRow2('${key}')"
+      style="white-space:nowrap;padding:7px 11px;border:none;border-radius:9px;font-size:.72rem;font-weight:800;cursor:pointer;background:#d4edda;color:#155724;display:flex;align-items:center;gap:4px;min-width:80px;justify-content:center">
+      ✅ Tersimpan
+    </button>`;
+  }
+  return `<button id="savebtn2-${key}" onclick="saveRow2('${key}')"
+    style="white-space:nowrap;padding:7px 11px;border:none;border-radius:9px;font-size:.72rem;font-weight:800;cursor:pointer;background:linear-gradient(135deg,#e67e22,#c0392b);color:#fff;box-shadow:0 2px 8px rgba(230,126,34,.3);display:flex;align-items:center;gap:4px;min-width:80px;justify-content:center">
+    💾 Simpan
+  </button>`;
+}
+
+function renderReceiptCell(key){
+  const saved = RECEIPT2[key]||'';
+  if(saved){
+    return `<div style="display:flex;align-items:center;gap:5px;flex-wrap:wrap">
+      <span style="font-size:16px">📎</span>
+      <span style="font-size:.65rem;color:#15803d;font-weight:700;max-width:80px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${saved}">${saved}</span>
+      <button onclick="removeReceipt2('${key}')" style="background:#fee2e2;border:none;border-radius:5px;padding:2px 6px;font-size:.6rem;font-weight:700;color:#dc2626;cursor:pointer">✕</button>
+    </div>`;
+  }
+  return `<div>
+    <label for="rf2-${key}" style="display:inline-flex;align-items:center;gap:5px;cursor:pointer;padding:5px 9px;background:#fffbf0;border:1.5px dashed #f39c12;border-radius:8px;font-size:.68rem;font-weight:700;color:#7d5a00">
+      📎 Upload<span style="color:#dc2626;font-weight:900">★</span>
+    </label>
+    <input type="file" id="rf2-${key}" accept="image/*,.pdf" style="display:none" onchange="handleReceipt2('${key}',this)">
+  </div>`;
+}
+
+function handleReceipt2(key, input){
+  const file = input.files[0];
+  if(!file) return;
+  if(file.size > 5*1024*1024){ showToast('⚠️ Fail terlalu besar. Maks 5MB.','err'); input.value=''; return; }
+  RECEIPT2[key] = file.name;
+  autoSaveReceipt2();
+  // Re-render just the receipt cell
+  const cell = document.getElementById('receipt2-'+key);
+  if(cell) cell.innerHTML = renderReceiptCell(key);
+  showToast('✅ Resit dimuat naik!','ok');
+}
+
+function removeReceipt2(key){
+  delete RECEIPT2[key];
+  autoSaveReceipt2();
+  const cell = document.getElementById('receipt2-'+key);
+  if(cell) cell.innerHTML = renderReceiptCell(key);
+  // reset file input
+  const inp = document.getElementById('rf2-'+key);
+  if(inp) inp.value='';
+  showToast('🗑️ Resit dibuang.','');
+}
+
+function autoSaveReceipt2(){
+  localStorage.setItem('mssj2026receipt2', JSON.stringify(RECEIPT2));
+}
+
+function renderRows2(arr,group,tbody){
+  const el=document.getElementById(tbody);
+  if(!el)return;
+  el.innerHTML=arr.map((p,i)=>{
+    const key=`${group}-${i}`;
+    const d=DATA2[key]||{};
+    const done=!!(d.type&&d.size&&d.saved);
+    const hasR=!!(RECEIPT2[key]);
+    return `<tr id="tr2-${key}" class="${done?'done':''}">
+      <td class="num">${i+1}</td>
+      <td class="nama">${p.nama}<small>${p.info}</small></td>
+      <td class="cat"><span style="font-size:.72rem;color:#666">${p.info.split('·')[0].trim()}</span></td>
+      <td><div class="type-row" id="type2-${key}">${renderTypeButtons2(key,d.type||'')}</div></td>
+      <td><div class="size-row" id="size2-${key}">${SIZES2.map(s=>`
+        <div class="sb ${d.size===s?'active':''}" onclick="setSize2('${key}','${s}',this)">${s}</div>`).join('')}</div></td>
+      <td id="receipt2-${key}">${renderReceiptCell(key)}</td>
+      <td style="text-align:center">${renderSaveBtn2(key,done,hasR)}</td>
+    </tr>`;
+  }).join('');
+}
+function renderAll2(){
+  renderRows2(PEGAWAI,'tp','t-bodyPgw');
+  renderRows2(GURU,'tg','t-bodyGuru');
+}
+function setType2(key,type,el){
+  if(!DATA2[key])DATA2[key]={};
+  DATA2[key].type=type;
+  DATA2[key].saved=false;
+  const cont=document.getElementById('type2-'+key);
+  cont.querySelectorAll('.tb').forEach(b=>{
+    b.classList.remove('active-polo','active-long');
+    if(b.dataset.t===type) b.classList.add(typeActiveCls(type));
+  });
+  // refresh size buttons active state only
+  const sizeCont=document.getElementById('size2-'+key);
+  const curSize=DATA2[key].size||'';
+  sizeCont.querySelectorAll('.sb').forEach(b=>{
+    b.classList.toggle('active',b.textContent===curSize);
+  });
+  resetSaveBtn2(key);
+  autoSave2();
+}
+function setSize2(key,size,el){
+  if(!DATA2[key])DATA2[key]={};
+  DATA2[key].size=size;
+  DATA2[key].saved=false;
+  const cont=document.getElementById('size2-'+key);
+  cont.querySelectorAll('.sb').forEach(b=>{
+    b.classList.toggle('active',b.textContent===size);
+  });
+  resetSaveBtn2(key);
+  autoSave2();
+}
+function resetSaveBtn2(key){
+  const btn=document.getElementById('savebtn2-'+key);
+  if(!btn)return;
+  btn.style.background='linear-gradient(135deg,#e67e22,#c0392b)';
+  btn.style.color='#fff';
+  btn.innerHTML='💾 Simpan';
+  const tr=document.getElementById('tr2-'+key);
+  if(tr)tr.className='';
+}
+function saveRow2(key){
+  const d=DATA2[key]||{};
+  if(!d.type){showToast('⚠️ Pilih jenis baju dahulu!','err');return;}
+  if(!d.size){showToast('⚠️ Pilih saiz baju dahulu!','err');return;}
+  if(!RECEIPT2[key]){
+    showToast('⚠️ Sila upload resit pembayaran dahulu!','err');
+    const cell=document.getElementById('receipt2-'+key);
+    if(cell){cell.style.outline='2px solid #dc2626';cell.style.borderRadius='8px';}
+    return;
+  }
+  DATA2[key].saved=true;
+  autoSave2();
+  const btn=document.getElementById('savebtn2-'+key);
+  if(btn){
+    btn.style.background='#d4edda';
+    btn.style.color='#155724';
+    btn.style.boxShadow='none';
+    btn.innerHTML='✅ Tersimpan';
+  }
+  const tr=document.getElementById('tr2-'+key);
+  if(tr)tr.className='done';
+  const cell=document.getElementById('receipt2-'+key);
+  if(cell){cell.style.outline='';cell.style.borderRadius='';}
+  updateStats();
+  showToast('✅ Tempahan disimpan!','ok');
+}
+function autoSave2(){
+  localStorage.setItem('mssj2026t',JSON.stringify(DATA2));
+}
+ 
+// ══════════════════════════════════════
+// SIDEBAR TRAINING SYSTEM
+// ══════════════════════════════════════
+function toggleSidebar(){
+  document.getElementById('sbDrawer').classList.toggle('open');
+  document.getElementById('sbBackdrop').classList.toggle('open');
+}
+function closeSidebar(){
+  document.getElementById('sbDrawer').classList.remove('open');
+  document.getElementById('sbBackdrop').classList.remove('open');
+}
+function closeTraining(){
+  document.getElementById('tpModal').classList.remove('open');
+}
+function switchTpTab(el,tab){
+  document.querySelectorAll('.tp-tab').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+  const data = TRAINING_DATA[tab] || TRAINING_DATA['overview'];
+  document.getElementById('tpModalIcon').textContent = data.icon;
+  document.getElementById('tpModalTitle').textContent = data.title;
+  document.getElementById('tpInner').innerHTML = `<div class="tp-content active">${data.content}</div>`;
+}
+
+const TRAINING_DATA = {
+  overview:{
+    icon:'🏆', title:'Gambaran Keseluruhan Program',
+    content:`
+      <div class="tp-callout tp-c-gold"><strong>🎯 Matlamat Utama</strong><p>Merentas Desa MSSJ 2026 — Tanjung Puteri Resort, Pasir Gudang · 20–22 April 2026. Sasaran: <strong>Top 5 Johor</strong> bagi setiap kategori B12, B15, B19.</p></div>
+      <div class="tp-stats-row">
+        <div class="tp-stat"><div class="tp-stat-n">18</div><div class="tp-stat-l">Atlet</div></div>
+        <div class="tp-stat"><div class="tp-stat-n">4</div><div class="tp-stat-l">Fasa Latihan</div></div>
+        <div class="tp-stat"><div class="tp-stat-n">10</div><div class="tp-stat-l">Minggu</div></div>
+        <div class="tp-stat"><div class="tp-stat-n">3</div><div class="tp-stat-l">Kategori</div></div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:16px 0">
+        <div onclick="openTraining('b12')" style="background:linear-gradient(135deg,#1d4ed8,#3b82f6);border-radius:14px;padding:18px;cursor:pointer;color:#fff;text-align:center">
+          <div style="font-size:32px;margin-bottom:8px">🏃</div>
+          <div style="font-size:22px;font-weight:900;font-family:Outfit,sans-serif">B12</div>
+          <div style="font-size:11px;opacity:.8;margin-top:3px">4km · 6 Atlet</div>
+          <div style="font-size:10px;background:rgba(255,255,255,.15);border-radius:6px;padding:3px 8px;margin-top:8px;display:inline-block">Klik untuk lihat →</div>
+        </div>
+        <div onclick="openTraining('b15')" style="background:linear-gradient(135deg,#7c3aed,#a855f7);border-radius:14px;padding:18px;cursor:pointer;color:#fff;text-align:center">
+          <div style="font-size:32px;margin-bottom:8px">🏃</div>
+          <div style="font-size:22px;font-weight:900;font-family:Outfit,sans-serif">B15</div>
+          <div style="font-size:11px;opacity:.8;margin-top:3px">6km · 6 Atlet</div>
+          <div style="font-size:10px;background:rgba(255,255,255,.15);border-radius:6px;padding:3px 8px;margin-top:8px;display:inline-block">Klik untuk lihat →</div>
+        </div>
+        <div onclick="openTraining('b19')" style="background:linear-gradient(135deg,#b91c1c,#ef4444);border-radius:14px;padding:18px;cursor:pointer;color:#fff;text-align:center">
+          <div style="font-size:32px;margin-bottom:8px">🏃</div>
+          <div style="font-size:22px;font-weight:900;font-family:Outfit,sans-serif">B19</div>
+          <div style="font-size:11px;opacity:.8;margin-top:3px">8km · 6 Atlet</div>
+          <div style="font-size:10px;background:rgba(255,255,255,.15);border-radius:6px;padding:3px 8px;margin-top:8px;display:inline-block">Klik untuk lihat →</div>
+        </div>
+      </div>
+      <h3 style="font-size:14px;font-weight:800;color:#0a3d62;margin:20px 0 10px;font-family:Outfit,sans-serif">📅 Garis Masa 10 Minggu</h3>
+      <div style="display:flex;gap:6px;flex-wrap:wrap">
+        ${['F1: Asas','F1: Aerobik','F1: Volume','F2: Selang','F2: Bukit','F2: Kelajuan','F3: Simulasi','F3: Taktik','F4: Taper','LUMBA!'].map((w,i)=>`
+        <div style="flex:1;min-width:70px;background:${i===9?'linear-gradient(135deg,#b8860b,#d4a012)':i>=6?'rgba(236,72,153,.1)':i>=3?'rgba(245,158,11,.1)':'rgba(99,102,241,.1)'};border-radius:8px;padding:8px 5px;text-align:center">
+          <div style="font-size:10px;font-weight:700;color:${i===9?'#fff':'#64748b'};font-family:Outfit,sans-serif">Mgg ${i+1}</div>
+          <div style="font-size:10px;font-weight:800;color:${i===9?'#fff':'#1a2a4a'};margin-top:3px;line-height:1.3;font-family:Outfit,sans-serif">${w}</div>
+        </div>`).join('')}
+      </div>`
+  },
+
+  fasa1:{
+    icon:'🏗️', title:'Fasa 1 — Asas Aerobik (Minggu 1–3)',
+    content:`
+      <div class="tp-callout tp-c-green"><strong>🎯 Objektif Fasa 1</strong><p>Bina asas aerobik yang kukuh. Tingkatkan kapasiti kardiovaskular, habituasikan badan kepada latihan berterusan, dan kurangkan risiko kecederaan melalui pengayaan teknik lari yang betul.</p></div>
+      <div class="tp-stats-row">
+        <div class="tp-stat"><div class="tp-stat-n">3</div><div class="tp-stat-l">Minggu</div></div>
+        <div class="tp-stat"><div class="tp-stat-n">60–70%</div><div class="tp-stat-l">Intensiti Maks</div></div>
+        <div class="tp-stat"><div class="tp-stat-n">4–5x</div><div class="tp-stat-l">Sesi/Minggu</div></div>
+        <div class="tp-stat"><div class="tp-stat-n">Rendah</div><div class="tp-stat-l">Beban Latihan</div></div>
+      </div>
+      <h3 style="font-size:14px;font-weight:800;color:#0a3d62;margin:18px 0 10px;font-family:Outfit,sans-serif">📋 Jadual Latihan Minggu 1–3</h3>
+      <table class="tp-tbl">
+        <thead><tr><th>Hari</th><th>Jenis Latihan</th><th>B12 (4km)</th><th>B15 (6km)</th><th>B19 (8km)</th></tr></thead>
+        <tbody>
+          <tr><td>Isnin</td><td>🏃 Jogging Mudah</td><td>20–25 min</td><td>25–30 min</td><td>30–35 min</td></tr>
+          <tr><td>Selasa</td><td>💪 Kekuatan Teras</td><td>Plank, Squat, Push-up 3 set</td><td>Plank, Lunge, Core 3 set</td><td>Deadlift, Core, Pull-up 4 set</td></tr>
+          <tr><td>Rabu</td><td>🏃 Lari Sederhana</td><td>25–30 min @ 65%</td><td>30–35 min @ 65%</td><td>35–40 min @ 65%</td></tr>
+          <tr><td>Khamis</td><td>🧘 Mobiliti & Rehat</td><td colspan="3">Regangan dinamik, foam rolling, yoga ringan</td></tr>
+          <tr><td>Jumaat</td><td>🏃 Lari Jarak Panjang</td><td>3km @ kadar selesa</td><td>5km @ kadar selesa</td><td>7km @ kadar selesa</td></tr>
+          <tr><td>Sabtu</td><td>⚡ Strides & Teknik</td><td colspan="3">8–10 × 100m strides + teknik angkat lutut</td></tr>
+          <tr><td>Ahad</td><td>🛌 Rehat Aktif</td><td colspan="3">Jalan kaki 20–30 min / renang ringan</td></tr>
+        </tbody>
+      </table>
+      <div class="tp-callout tp-c-gold" style="margin-top:16px"><strong>📌 Kaedah Pelaksanaan</strong><p>Gunakan kaedah <strong>pacing percakapan</strong> — atlet mestilah boleh bercakap semasa berlari. Nadi sasaran 120–140 bpm. Jurulatih memantau pernafasan dan postur lari. Wajib warm-up 10 min dan cool-down 10 min setiap sesi.</p></div>`
+  },
+
+  fasa2:{
+    icon:'⚡', title:'Fasa 2 — Kekuatan & Kelajuan (Minggu 4–6)',
+    content:`
+      <div class="tp-callout tp-c-gold"><strong>🎯 Objektif Fasa 2</strong><p>Tingkatkan ambang laktat dan kelajuan. Perkenalkan latihan interval, bukit, dan kekuatan khusus untuk meningkatkan VO₂max dan ekonomi larian.</p></div>
+      <div class="tp-stats-row">
+        <div class="tp-stat"><div class="tp-stat-n">3</div><div class="tp-stat-l">Minggu</div></div>
+        <div class="tp-stat"><div class="tp-stat-n">75–85%</div><div class="tp-stat-l">Intensiti Maks</div></div>
+        <div class="tp-stat"><div class="tp-stat-n">5x</div><div class="tp-stat-l">Sesi/Minggu</div></div>
+        <div class="tp-stat"><div class="tp-stat-n">Sederhana</div><div class="tp-stat-l">Beban Latihan</div></div>
+      </div>
+      <h3 style="font-size:14px;font-weight:800;color:#0a3d62;margin:18px 0 10px;font-family:Outfit,sans-serif">📋 Jadual Latihan Minggu 4–6</h3>
+      <table class="tp-tbl">
+        <thead><tr><th>Hari</th><th>Jenis Latihan</th><th>B12</th><th>B15</th><th>B19</th></tr></thead>
+        <tbody>
+          <tr><td>Isnin</td><td>⚡ Latihan Interval</td><td>6×200m @ 80%</td><td>8×300m @ 80%</td><td>10×400m @ 80%</td></tr>
+          <tr><td>Selasa</td><td>🏔️ Hill Repeats</td><td>6×bukit 80m</td><td>8×bukit 100m</td><td>10×bukit 120m</td></tr>
+          <tr><td>Rabu</td><td>🏃 Tempo Run</td><td>15 min @ 75%</td><td>20 min @ 75%</td><td>25 min @ 75%</td></tr>
+          <tr><td>Khamis</td><td>💪 Kekuatan &amp; Kuasa</td><td colspan="3">Box jump, bounding, skipping — 3–4 set</td></tr>
+          <tr><td>Jumaat</td><td>🏃 Lari Jarak Panjang</td><td>4km mudah</td><td>6km mudah</td><td>8km mudah</td></tr>
+          <tr><td>Sabtu</td><td>🧪 Time Trial</td><td>2km perlumbaan</td><td>3km perlumbaan</td><td>4km perlumbaan</td></tr>
+          <tr><td>Ahad</td><td>🛌 Rehat Penuh</td><td colspan="3">Tiada latihan — pemulihan aktif sahaja</td></tr>
+        </tbody>
+      </table>
+      <div class="tp-callout tp-c-red" style="margin-top:16px"><strong>⚠️ Amaran Jurulatih</strong><p>Pantau tanda <strong>lebih latihan</strong> — kelesuan melampau, tidur terganggu, jangkitan berulang. Jika ada tanda ini, kurangkan 30% beban minggu berkenaan. Fisio wajib hadir semasa Time Trial Sabtu.</p></div>`
+  },
+
+  fasa3:{
+    icon:'🎯', title:'Fasa 3 — Spesifik Perlumbaan (Minggu 7–8)',
+    content:`
+      <div class="tp-callout tp-c-red"><strong>🎯 Objektif Fasa 3</strong><p>Simulasi kondisi sebenar perlumbaan. Atlet berlari dalam kumpulan, menangani taktik, mempraktikkan strategi pecut akhir dan pengurusan tenaga sepanjang laluan.</p></div>
+      <div class="tp-stats-row">
+        <div class="tp-stat"><div class="tp-stat-n">2</div><div class="tp-stat-l">Minggu</div></div>
+        <div class="tp-stat"><div class="tp-stat-n">85–95%</div><div class="tp-stat-l">Intensiti Maks</div></div>
+        <div class="tp-stat"><div class="tp-stat-n">4–5x</div><div class="tp-stat-l">Sesi/Minggu</div></div>
+        <div class="tp-stat"><div class="tp-stat-n">Tinggi</div><div class="tp-stat-l">Beban Latihan</div></div>
+      </div>
+      <h3 style="font-size:14px;font-weight:800;color:#0a3d62;margin:18px 0 10px;font-family:Outfit,sans-serif">🗓️ Program Minggu 7–8</h3>
+      <table class="tp-tbl">
+        <thead><tr><th>Sesi</th><th>Aktiviti</th><th>Huraian</th></tr></thead>
+        <tbody>
+          <tr><td>Simulasi 1</td><td>🏁 Race Simulation</td><td>Lari jarak penuh dalam kumpulan dengan bib nombor — rekod masa setiap 1km</td></tr>
+          <tr><td>Simulasi 2</td><td>📍 Terrain Specific</td><td>Latihan di padang berbukit, permukaan tanah liat, jalan tar — ikut profil laluan MSSJ</td></tr>
+          <tr><td>Taktik</td><td>🧠 Pacing Strategy</td><td>Latih atlet kekal 10m di belakang pemimpin, pecut pada km terakhir</td></tr>
+          <tr><td>Kekuatan</td><td>💪 Race-Specific Strength</td><td>Single-leg squat, bounding hills, sprint drills dengan beg berat 2kg</td></tr>
+          <tr><td>Mental</td><td>🧘 Visualisasi</td><td>Sesi 15 min — bayangkan laluan, titik penat, strategi overcome</td></tr>
+        </tbody>
+      </table>
+      <div class="tp-callout tp-c-gold" style="margin-top:16px"><strong>📌 Kaedah Pelaksanaan</strong><p>Gunakan laluan yang menyerupai topografi Tanjung Puteri Resort. Jurulatih berdiri di KM 2 dan KM terakhir untuk memberi maklum balas segera. Rekod video teknik lari untuk semakan bersama atlet.</p></div>`
+  },
+
+  fasa4:{
+    icon:'🏁', title:'Fasa 4 — Tapering & Puncak (Minggu 9–10)',
+    content:`
+      <div class="tp-callout tp-c-green"><strong>🎯 Objektif Fasa 4</strong><p>Kurangkan beban latihan 40–60% sambil mengekalkan intensiti. Badan perlu rehat, baiki tisu otot, dan simpan tenaga untuk prestasi puncak pada hari lumba.</p></div>
+      <div class="tp-stats-row">
+        <div class="tp-stat"><div class="tp-stat-n">2</div><div class="tp-stat-l">Minggu</div></div>
+        <div class="tp-stat"><div class="tp-stat-n">60–70%</div><div class="tp-stat-l">Intensiti Maks</div></div>
+        <div class="tp-stat"><div class="tp-stat-n">3x</div><div class="tp-stat-l">Sesi/Minggu</div></div>
+        <div class="tp-stat"><div class="tp-stat-n">Sangat Ringan</div><div class="tp-stat-l">Beban</div></div>
+      </div>
+      <h3 style="font-size:14px;font-weight:800;color:#0a3d62;margin:18px 0 10px;font-family:Outfit,sans-serif">📅 Jadual Tapering</h3>
+      <table class="tp-tbl">
+        <thead><tr><th>Hari Sebelum Lumba</th><th>Aktiviti</th><th>Tempoh</th></tr></thead>
+        <tbody>
+          <tr><td>-14 hari</td><td>🏃 Lari Ringan + Strides</td><td>20 min + 4×100m strides</td></tr>
+          <tr><td>-10 hari</td><td>⚡ Interval Pendek</td><td>4×200m @ 90% (separuh daripada biasa)</td></tr>
+          <tr><td>-7 hari</td><td>🏃 Jogging Mudah</td><td>15–20 min sahaja — rehat kaki</td></tr>
+          <tr><td>-5 hari</td><td>🧘 Mobiliti & Teknik</td><td>Drills ringan + regangan 30 min</td></tr>
+          <tr><td>-3 hari</td><td>🏃 Easy Run</td><td>10–15 min + 3×100m strides</td></tr>
+          <tr><td>-2 hari</td><td>🛌 Rehat Penuh</td><td>Tidur awal, makan karbohidrat tinggi</td></tr>
+          <tr><td>-1 hari</td><td>🚶 Jog Santai + Recce</td><td>10 min jog + lihat laluan lumba</td></tr>
+          <tr><td>Hari Lumba</td><td>🏆 LUMBA!</td><td>Warm-up 15 min @ 50% · Pecut penuh!</td></tr>
+        </tbody>
+      </table>
+      <div class="tp-callout tp-c-gold" style="margin-top:16px"><strong>🍚 Carbohydrate Loading</strong><p>3 hari sebelum lumba: tingkatkan pengambilan karbohidrat kepada 70% daripada kalori harian — nasi, pasta, roti, ubi. Elak makanan berlemak tinggi dan serat berlebihan.</p></div>`
+  },
+
+  b12:{
+    icon:'🔵', title:'Program B12 / P12 — Bawah 12 Tahun',
+    content:`
+      <div class="tp-callout tp-c-green"><strong>👦 Profil Kategori B12/P12</strong><p>Jarak: <strong>4km</strong>. Fasa perkembangan kritikal — tumpukan teknik asas, keseronokan berlari, dan pembinaan keyakinan diri. Elak tekanan berlebihan pada peringkat ini.</p></div>
+      <div class="tp-stats-row">
+        <div class="tp-stat"><div class="tp-stat-n">4km</div><div class="tp-stat-l">Jarak Lumba</div></div>
+        <div class="tp-stat"><div class="tp-stat-n">6</div><div class="tp-stat-l">Atlet</div></div>
+        <div class="tp-stat"><div class="tp-stat-n">22–28</div><div class="tp-stat-l">Min Sasaran</div></div>
+        <div class="tp-stat"><div class="tp-stat-n">Teknik</div><div class="tp-stat-l">Fokus Utama</div></div>
+      </div>
+
+      <h3 style="font-size:14px;font-weight:800;color:#0a3d62;margin:18px 0 10px;font-family:Outfit,sans-serif">🏃 Program Latihan Mingguan B12/P12</h3>
+      <table class="tp-tbl">
+        <thead><tr><th>Sesi</th><th>Aktiviti</th><th>Tempoh/Jarak</th><th>Intensiti</th></tr></thead>
+        <tbody>
+          <tr><td>Sesi 1</td><td>🐢 Jogging Asas</td><td>15–20 min berterusan</td><td>Mudah — boleh bercakap</td></tr>
+          <tr><td>Sesi 2</td><td>🤸 Teknik Lari</td><td>30 min (drills + teknik)</td><td>Rendah-Sederhana</td></tr>
+          <tr><td>Sesi 3</td><td>🌄 Lari Jarak Panjang</td><td>3–4km berterusan</td><td>60–65% kadar jantung maks</td></tr>
+          <tr><td>Sesi 4</td><td>⚡ Fun Speed Play</td><td>4×100m lari cepat</td><td>75–80% — seronok!</td></tr>
+          <tr><td>Bonus</td><td>💪 Kekuatan Badan</td><td>20 min — Plank, Squat, Jump</td><td>Berat badan sahaja</td></tr>
+        </tbody>
+      </table>
+
+      <h3 style="font-size:14px;font-weight:800;color:#1565c0;margin:20px 0 10px;font-family:Outfit,sans-serif">🎓 Drill Teknik Wajib B12</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px">
+        ${[
+          {ico:'🦵',name:'High Knees',desc:'Angkat lutut setinggi pinggang, 20m × 4 ulangan'},
+          {ico:'🦶',name:'Butt Kicks',desc:'Tumit cecah punggung, teknik langkah cepat'},
+          {ico:'🏃',name:'A-Skip',desc:'Koordinasi tangan-kaki, irama 2-langkah'},
+          {ico:'🌊',name:'Bounding',desc:'Langkah lebar explosive, kuatkan tolakan'},
+          {ico:'↔️',name:'Lateral Shuffle',desc:'Pergerakan sisi untuk agility'},
+          {ico:'🌀',name:'Arm Swing Drill',desc:'Ayunan tangan 90°, elak silang badan'}
+        ].map(d=>`<div style="background:#f8faff;border:1px solid #e2e8f0;border-radius:10px;padding:12px;display:flex;gap:10px;align-items:flex-start">
+          <span style="font-size:22px">${d.ico}</span>
+          <div><div style="font-size:12px;font-weight:800;color:#1a2a4a;font-family:Outfit,sans-serif">${d.name}</div><div style="font-size:11px;color:#64748b;margin-top:2px">${d.desc}</div></div>
+        </div>`).join('')}
+      </div>
+      <div class="tp-callout tp-c-gold"><strong>💡 Tips Jurulatih untuk B12</strong><p>Elak perkataan "laju" — ganti dengan "ringan dan bebas". Pujian lebih berkesan daripada arahan. Bagi mereka berlari dengan rakan sebaya yang sama kelajuan. Sesi tidak melebihi 45 minit.</p></div>`
+  },
+
+  b15:{
+    icon:'🟣', title:'Program B15 / P15 — Bawah 15 Tahun',
+    content:`
+      <div class="tp-callout tp-c-gold"><strong>🧑 Profil Kategori B15/P15</strong><p>Jarak: <strong>6km</strong>. Peringkat perkembangan aerobik aktif — badan sudah mampu menampung latihan berstruktur. Perkenalkan konsep ambang laktat dan pacing strategi.</p></div>
+      <div class="tp-stats-row">
+        <div class="tp-stat"><div class="tp-stat-n">6km</div><div class="tp-stat-l">Jarak Lumba</div></div>
+        <div class="tp-stat"><div class="tp-stat-n">6</div><div class="tp-stat-l">Atlet</div></div>
+        <div class="tp-stat"><div class="tp-stat-n">28–36</div><div class="tp-stat-l">Min Sasaran</div></div>
+        <div class="tp-stat"><div class="tp-stat-n">Laktat</div><div class="tp-stat-l">Fokus Utama</div></div>
+      </div>
+
+      <h3 style="font-size:14px;font-weight:800;color:#0a3d62;margin:18px 0 10px;font-family:Outfit,sans-serif">🏃 Program Latihan Mingguan B15/P15</h3>
+      <table class="tp-tbl">
+        <thead><tr><th>Sesi</th><th>Aktiviti</th><th>Tempoh/Jarak</th><th>Intensiti</th></tr></thead>
+        <tbody>
+          <tr><td>Sesi 1</td><td>🏃 Tempo Run</td><td>20–25 min berterusan</td><td>75–80% — susah bercakap</td></tr>
+          <tr><td>Sesi 2</td><td>⚡ Interval 400m</td><td>6–8 × 400m</td><td>85–90%, rehat 90 saat</td></tr>
+          <tr><td>Sesi 3</td><td>🌄 Long Run</td><td>6–7km @ kadar selesa</td><td>65% — aerobik asas</td></tr>
+          <tr><td>Sesi 4</td><td>🏔️ Hill Training</td><td>8–10 × bukit 100m</td><td>80–85% tolakan</td></tr>
+          <tr><td>Sesi 5</td><td>💪 Circuit Training</td><td>3 pusingan × 8 stesen</td><td>Sederhana-Tinggi</td></tr>
+        </tbody>
+      </table>
+
+      <h3 style="font-size:14px;font-weight:800;color:#7c3aed;margin:20px 0 10px;font-family:Outfit,sans-serif">📊 Pembangunan Fisiologi B15</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:16px">
+        ${[
+          {ico:'❤️',name:'Kadar Jantung',desc:'Latih di zon 3 (75–85%) untuk bina ambang laktat'},
+          {ico:'🫁',name:'VO₂max',desc:'Interval pendek intensiti tinggi meningkat 8–12%'},
+          {ico:'🦵',name:'Kekuatan Teras',desc:'Glute bridge, deadlift, lunge — asas kuasa larian'},
+          {ico:'⚖️',name:'Ekonomi Larian',desc:'Kurangkan pergerakan menegak, tingkat panjang langkah'},
+          {ico:'🧠',name:'Strategi Pacing',desc:'Negative split — KM pertama lebih perlahan 5%'},
+          {ico:'💧',name:'Hidrasi Latihan',desc:'500ml 2 jam sebelum, 200ml setiap 20 min semasa'}
+        ].map(d=>`<div style="background:#faf5ff;border:1px solid #e9d5ff;border-radius:10px;padding:12px;text-align:center">
+          <span style="font-size:24px;display:block;margin-bottom:6px">${d.ico}</span>
+          <div style="font-size:11px;font-weight:800;color:#6d28d9;font-family:Outfit,sans-serif">${d.name}</div>
+          <div style="font-size:10px;color:#64748b;margin-top:3px;line-height:1.4">${d.desc}</div>
+        </div>`).join('')}
+      </div>
+      <div class="tp-callout tp-c-gold"><strong>💡 Strategi Lumba 6km</strong><p>KM 1–2: Kawal — jangan terlebih laju walaupun rasa mudah. KM 3–4: Tingkat rentak 5%. KM 5: Cari tanda penat dan atasi. KM 6: Pecut penuh akhir 400m. Sasaran negative split.</p></div>`
+  },
+
+  b19:{
+    icon:'🔴', title:'Program B19 / P19 — Bawah 19 Tahun',
+    content:`
+      <div class="tp-callout tp-c-red"><strong>🏋️ Profil Kategori B19/P19</strong><p>Jarak: <strong>8km</strong>. Atlet matang secara fizikal — program intensiti tinggi, volume besar, dan pembangunan mental yang kuat. Ini adalah kategori paling kompetitif dalam MSSJ.</p></div>
+      <div class="tp-stats-row">
+        <div class="tp-stat"><div class="tp-stat-n">8km</div><div class="tp-stat-l">Jarak Lumba</div></div>
+        <div class="tp-stat"><div class="tp-stat-n">6</div><div class="tp-stat-l">Atlet</div></div>
+        <div class="tp-stat"><div class="tp-stat-n">32–42</div><div class="tp-stat-l">Min Sasaran</div></div>
+        <div class="tp-stat"><div class="tp-stat-n">Intensiti</div><div class="tp-stat-l">Fokus Utama</div></div>
+      </div>
+
+      <h3 style="font-size:14px;font-weight:800;color:#0a3d62;margin:18px 0 10px;font-family:Outfit,sans-serif">🏃 Program Latihan Mingguan B19/P19</h3>
+      <table class="tp-tbl">
+        <thead><tr><th>Sesi</th><th>Aktiviti</th><th>Tempoh/Jarak</th><th>Intensiti</th></tr></thead>
+        <tbody>
+          <tr><td>Sesi 1</td><td>🔥 Latihan Interval</td><td>10–12 × 400m</td><td>90–95%, rehat 60 saat</td></tr>
+          <tr><td>Sesi 2</td><td>💪 Strength &amp; Power</td><td>4 set × 6 stesen berat</td><td>Intensiti Tinggi</td></tr>
+          <tr><td>Sesi 3</td><td>⏱️ Tempo Run Panjang</td><td>30–35 min @ 80–85%</td><td>Ambang laktat</td></tr>
+          <tr><td>Sesi 4</td><td>🏔️ Hill &amp; Terrain</td><td>12–15 × bukit 120m</td><td>Explosive uphill</td></tr>
+          <tr><td>Sesi 5</td><td>🌄 Long Slow Distance</td><td>10–12km @ 65%</td><td>Aerobik asas</td></tr>
+          <tr><td>Sesi 6</td><td>🏁 Race Simulation</td><td>8km dengan bib &amp; jam</td><td>95% — race effort</td></tr>
+        </tbody>
+      </table>
+
+      <h3 style="font-size:14px;font-weight:800;color:#b91c1c;margin:20px 0 10px;font-family:Outfit,sans-serif">🧠 Strategi Mental B19 — 8km Race Plan</h3>
+      <div style="position:relative;padding-left:28px;margin-bottom:16px">
+        <div style="position:absolute;left:9px;top:8px;bottom:8px;width:2px;background:linear-gradient(to bottom,#ef4444,#f59e0b,#10b981);border-radius:2px"></div>
+        ${[
+          {km:'KM 1–2',color:'#ef4444',title:'Kawalan Nafsu',desc:'Lari 5–8% lebih perlahan daripada target pace. Ramai atlet kalah di sini kerana terlalu laju di awal.'},
+          {km:'KM 3–4',color:'#f59e0b',title:'Masuk Rentak',desc:'Tingkat ke target pace. Perhatikan pernafasan — jika tidak boleh kira 2-langkah-2-hembus, perlahan sedikit.'},
+          {km:'KM 5–6',color:'#0ea5e9',title:'Ujian Sebenar',desc:'Bahagian paling mencabar. Gunakan self-talk: "Ini hanya rasa — bukan had sebenar." Cari mark depan.'},
+          {km:'KM 7',color:'#8b5cf6',title:'Mula Pecut',desc:'Jika masih ada tenaga, mula tingkat 3–5%. Atasi seorang demi seorang.'},
+          {km:'KM 8',color:'#10b981',title:'Semua Keluar!',desc:'400m terakhir — pecut penuh. Tiada saving. Bayangkan garisan penamat sejak 200m lagi.'},
+        ].map(s=>`<div style="position:relative;background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:14px 16px;margin-bottom:8px;border-left:3px solid ${s.color}">
+          <div style="font-size:11px;font-weight:800;color:${s.color};font-family:Outfit,sans-serif;margin-bottom:3px">${s.km} — ${s.title}</div>
+          <div style="font-size:12px;color:#4a5568;line-height:1.6">${s.desc}</div>
+        </div>`).join('')}
+      </div>
+      <div class="tp-callout tp-c-gold"><strong>🏆 Sasaran Realistik B19 Kluang</strong><p>Lelaki: sub-30 minit. Perempuan: sub-36 minit. Berdasarkan rekod MSSJ lepas, kedudukan Top 5 memerlukan konsistensi latihan dan pengurusan perlumbaan yang bijak.</p></div>`
+  },
+
+  diet:{
+    icon:'🥗', title:'Nutrisi Pra-Kejohanan — Elak Ketegangan Kaki, Perut & Otot',
+    content:`
+      <div class="tp-callout tp-c-green"><strong>🥗 Prinsip Utama</strong><p>Makanan yang betul pada masa yang betul boleh bezakan antara kekejangan di KM 3 atau pecut kuat di garisan tamat. Tumpuan: <strong>karbohidrat mudah hadam + elektrolit + hidrasi</strong>. Elak makanan baru hari lumba — praktik semasa latihan dulu.</p></div>
+
+      <!-- TIMELINE VISUAL -->
+      <h3 style="font-size:14px;font-weight:800;color:#0a3d62;margin:18px 0 12px;font-family:Outfit,sans-serif">⏱️ Pelan Makan Mengikut Masa Sebelum Larian</h3>
+
+      ${[
+        {
+          jam:'2 JAM SEBELUM', masa:'~6:00 pagi', color:'#1d4ed8', bg:'#eff6ff', border:'#bfdbfe',
+          icon:'🍽️', tajuk:'Makan Utama Pra-Lumba',
+          nota:'Tetingkap paling penting — cukup masa untuk hadam sepenuhnya.',
+          makanan:[
+            {ico:'🍞', nama:'Roti putih + madu / jem', sebab:'Hadam pantas, glikogen segera tersedia'},
+            {ico:'🌾', nama:'Oat masak + pisang hiris', sebab:'Tenaga stabil + kalium cegah kekejangan'},
+            {ico:'🥖', nama:'Roti bakar + selai kacang (nipis)', sebab:'Karbohidrat + sedikit protein'},
+            {ico:'🍠', nama:'Ubi keledek / ubi rebus', sebab:'Karbohidrat kompleks + potassium tinggi'},
+            {ico:'🥣', nama:'Cornflakes / Milo + susu rendah lemak', sebab:'Familiar, mudah, tenaga pantas'},
+          ],
+          elak:'Nasi lemak, goreng-goreng, makanan berlemak, bersantan, pedas'
+        },
+        {
+          jam:'1 JAM SEBELUM', masa:'~7:00 pagi', color:'#d97706', bg:'#fffbeb', border:'#fde68a',
+          icon:'🍌', tajuk:'Snek Ringan Top-Up Tenaga',
+          nota:'Perut masih proses makanan awal — ambil snek kecil sahaja.',
+          makanan:[
+            {ico:'🍌', nama:'Pisang masak (1 biji)', sebab:'Potassium tinggi — pencegah utama kekejangan otot kaki'},
+            {ico:'🍯', nama:'Roti + madu (½ keping)', sebab:'Gula semulajadi — tenaga 15–20 min akan datang'},
+            {ico:'🥤', nama:'Milo suam (tanpa terlalu manis)', sebab:'Karbohidrat + magnesium ringan'},
+            {ico:'🍈', nama:'Tembikai / betik (hirisan kecil)', sebab:'Air + elektrolit semulajadi'},
+            {ico:'🫙', nama:'2–3 biji kurma / tamar', sebab:'Gula semulajadi pantas diserap'},
+          ],
+          elak:'Telur, susu penuh, protein bar, makanan berlemak atau berserabut tinggi'
+        },
+        {
+          jam:'30 MINIT SEBELUM', masa:'~7:30 pagi', color:'#dc2626', bg:'#fff1f2', border:'#fecdd3',
+          icon:'⚡', tajuk:'Top-Up Akhir — Kecil Sahaja',
+          nota:'Perut mesti kosong hampir sepenuhnya sebelum gun start. Jangan makan banyak!',
+          makanan:[
+            {ico:'🍌', nama:'½ pisang sahaja', sebab:'Diserap pantas, potassium segera ke otot'},
+            {ico:'🫙', nama:'3–4 biji kurma / tamar', sebab:'Glukosa segera masuk darah dalam 15 minit'},
+            {ico:'🍯', nama:'1 sudu kecil madu terus', sebab:'Tenaga ekspres tanpa bebankan perut'},
+            {ico:'🥤', nama:'100–150ml air isotonik', sebab:'Elektrolit (sodium, potassium, magnesium)'},
+          ],
+          elak:'Apa-apa makanan pejal dalam kuantiti besar — risiko loya dan kekejangan perut semasa berlari'
+        }
+      ].map(t=>`
+      <div style="background:${t.bg};border:2px solid ${t.border};border-radius:16px;margin-bottom:16px;overflow:hidden">
+        <div style="background:${t.color};padding:12px 18px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
+          <div style="display:flex;align-items:center;gap:10px">
+            <span style="font-size:26px">${t.icon}</span>
+            <div>
+              <div style="font-size:11px;font-weight:900;color:rgba(255,255,255,.75);letter-spacing:2px;text-transform:uppercase;font-family:Outfit,sans-serif">${t.jam}</div>
+              <div style="font-size:15px;font-weight:800;color:#fff;font-family:Outfit,sans-serif">${t.tajuk}</div>
+            </div>
+          </div>
+          <div style="background:rgba(255,255,255,.2);border-radius:20px;padding:4px 12px;font-size:11px;font-weight:700;color:#fff;font-family:Outfit,sans-serif">⏰ ${t.masa}</div>
+        </div>
+        <div style="padding:14px 18px">
+          <div style="font-size:11.5px;color:#64748b;font-style:italic;margin-bottom:12px;padding:8px 12px;background:rgba(0,0,0,.03);border-radius:8px;border-left:3px solid ${t.color}">${t.nota}</div>
+          <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:${t.color};margin-bottom:8px;font-family:Outfit,sans-serif">✅ Pilihan Terbaik</div>
+          ${t.makanan.map(m=>`
+          <div style="display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px dashed rgba(0,0,0,.06)">
+            <span style="font-size:20px;flex-shrink:0">${m.ico}</span>
+            <div style="flex:1">
+              <div style="font-size:12.5px;font-weight:700;color:#1a2a4a;font-family:Outfit,sans-serif">${m.nama}</div>
+              <div style="font-size:11px;color:#64748b;margin-top:2px">${m.sebab}</div>
+            </div>
+          </div>`).join('')}
+          <div style="background:rgba(220,38,38,.06);border:1px solid rgba(220,38,38,.15);border-radius:8px;padding:8px 12px;margin-top:12px;font-size:11px;color:#991b1b">
+            <strong>🚫 Elak:</strong> ${t.elak}
+          </div>
+        </div>
+      </div>`).join('')}
+
+      <!-- PUNCA KETEGANGAN -->
+      <h3 style="font-size:14px;font-weight:800;color:#b91c1c;margin:22px 0 12px;font-family:Outfit,sans-serif">⚠️ Punca Ketegangan Kaki, Perut & Otot — Dan Cara Elak</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px">
+        ${[
+          {ico:'🦵',color:'#fee2e2',bc:'#fca5a5',tc:'#991b1b',
+           masalah:'Kekejangan Kaki',
+           punca:'Kurang potassium & magnesium, dehidrasi',
+           penyelesaian:'Pisang, ubi keledek, kurma + air isotonik'},
+          {ico:'🤢',color:'#fef9c3',bc:'#fde047',tc:'#854d0e',
+           masalah:'Kekejangan / Mual Perut',
+           punca:'Makanan berlemak, pedas, berserabut tinggi, makan terlalu dekat masa lari',
+           penyelesaian:'Roti putih, oat, pisang — elak makan dalam 30 min sebelum gun'},
+          {ico:'💪',color:'#f0fdf4',bc:'#86efac',tc:'#14532d',
+           masalah:'Otot Tegang / Lemah',
+           punca:'Dehidrasi + elektrolit rendah + tidur kurang',
+           penyelesaian:'500ml air pada -2j, 300ml pada -30min, tidur 9 jam malam sebelum'},
+          {ico:'😵',color:'#ede9fe',bc:'#c4b5fd',tc:'#4c1d95',
+           masalah:'Tenaga Jatuh Pertengahan',
+           punca:'Sarapan terlalu sedikit atau terlalu awal, tidak top-up pada -30 min',
+           penyelesaian:'Ikut pelan 3 tetingkap makan — jangan skip satu pun'}
+        ].map(p=>`
+        <div style="background:${p.color};border:1.5px solid ${p.bc};border-radius:12px;padding:14px">
+          <div style="font-size:26px;margin-bottom:6px">${p.ico}</div>
+          <div style="font-size:12px;font-weight:800;color:${p.tc};font-family:Outfit,sans-serif;margin-bottom:6px">${p.masalah}</div>
+          <div style="font-size:10.5px;color:#374151;margin-bottom:6px"><strong>Punca:</strong> ${p.punca}</div>
+          <div style="font-size:10.5px;color:#374151"><strong>✅ Elak dengan:</strong> ${p.penyelesaian}</div>
+        </div>`).join('')}
+      </div>
+
+      <!-- HIDRASI TIMELINE -->
+      <h3 style="font-size:14px;font-weight:800;color:#0891b2;margin:22px 0 12px;font-family:Outfit,sans-serif">💧 Jadual Hidrasi Hari Lumba</h3>
+      <div style="position:relative;padding-left:28px">
+        <div style="position:absolute;left:9px;top:8px;bottom:8px;width:2px;background:linear-gradient(to bottom,#0891b2,#059669);border-radius:2px"></div>
+        ${[
+          {t:'Bangun pagi (5:30am)', ico:'🌅', desc:'Minum 500ml air sejuk terus — isi semula kehilangan cecair semasa tidur'},
+          {t:'-2 jam (6:00am)',       ico:'🍽️', desc:'500ml air atau air isotonik bersama makan utama'},
+          {t:'-1 jam (7:00am)',       ico:'🍌', desc:'200–300ml air biasa bersama snek ringan'},
+          {t:'-30 min (7:30am)',      ico:'⚡', desc:'150ml air isotonik — elektrolit akhir sebelum warm-up'},
+          {t:'Semasa warm-up',        ico:'🏃', desc:'Teguk kecil 100ml sahaja — jangan minum banyak'},
+          {t:'Selepas lumba',         ico:'🏁', desc:'Minum segera 400–500ml air + air isotonik untuk pemulihan'},
+        ].map(h=>`
+        <div style="background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:10px 14px;margin-bottom:8px;display:flex;align-items:flex-start;gap:10px">
+          <span style="font-size:18px;flex-shrink:0">${h.ico}</span>
+          <div>
+            <div style="font-size:11px;font-weight:800;color:#0891b2;font-family:Outfit,sans-serif">${h.t}</div>
+            <div style="font-size:12px;color:#374151;margin-top:2px;line-height:1.5">${h.desc}</div>
+          </div>
+        </div>`).join('')}
+      </div>
+      <div style="background:#fefce8;border:1.5px solid #fde047;border-radius:10px;padding:10px 14px;margin-top:8px;font-size:11.5px;color:#713f12">
+        💡 <strong>Cara mudah semak hidrasi:</strong> Lihat warna urin — <span style="color:#059669;font-weight:700">kuning muda = cukup</span> · <span style="color:#d97706;font-weight:700">kuning gelap = minum lagi</span> · <span style="color:#dc2626;font-weight:700">jingga/pekat = bahaya, minum segera</span>
+      </div>
+
+      <!-- PANTANG LARANG -->
+      <h3 style="font-size:14px;font-weight:800;color:#dc2626;margin:22px 0 12px;font-family:Outfit,sans-serif">🚫 Pantang Larang Mutlak Hari Lumba</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px">
+        ${[
+          {ico:'🌶️', item:'Makanan pedas', contoh:'Nasi lemak bersambal, mee goreng pedas'},
+          {ico:'🍟', item:'Makanan berminyak', contoh:'Goreng-goreng, karipap, nugget'},
+          {ico:'🥛', item:'Susu / tenusu banyak', contoh:'Teh tarik pekat, lassi, susu penuh'},
+          {ico:'🥬', item:'Serat tinggi', contoh:'Sayur mentah, kekacang, buah berserat'},
+          {ico:'🧃', item:'Minuman bergula tinggi', contoh:'Air kotak, sirap, soda'},
+          {ico:'🆕', item:'Makanan baru', contoh:'Apa-apa yang belum pernah dicuba semasa latihan'},
+        ].map(p=>`
+        <div style="background:#fff;border:1.5px solid #fee2e2;border-radius:10px;padding:10px 12px;display:flex;gap:8px;align-items:flex-start">
+          <span style="font-size:20px;flex-shrink:0">${p.ico}</span>
+          <div>
+            <div style="font-size:12px;font-weight:800;color:#dc2626;font-family:Outfit,sans-serif">${p.item}</div>
+            <div style="font-size:10.5px;color:#64748b;margin-top:2px">${p.contoh}</div>
+          </div>
+        </div>`).join('')}
+      </div>
+
+      <div class="tp-callout tp-c-gold"><strong>💛 Petua Emas</strong><p>Praktikkan pelan makan ini semasa latihan — bukan hanya pada hari lumba. Badan perlu biasa dengan jadual pemakanan ini. Atlet yang hadam makanan dengan baik semasa latihan akan hadam dengan baik semasa lumba juga.</p></div>`
+  },
+
+  safety:{
+    icon:'🚑', title:'Keselamatan & Protokol Kecemasan',
+    content:`
+      <div class="tp-callout tp-c-red"><strong>🚑 Keutamaan Keselamatan</strong><p>Fisio dan pegawai bantu mula mesti hadir di semua sesi latihan dan hari kejohanan. Semua jurulatih perlu tahu lokasi kit kecemasan dan nombor telefon penting.</p></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0">
+        ${[
+          {ico:'🦵',color:'#fee2e2',bc:'#fca5a5',tc:'#991b1b',name:'Kekejangan Otot',
+           steps:['Hentikan aktiviti segera','Regangkan otot secara perlahan','Urut dengan tekanan sederhana','Beri air + elektrolit','Jika berterusan >5 min — hantar hospital']},
+          {ico:'🌡️',color:'#fef3c7',bc:'#fcd34d',tc:'#92400e',name:'Heatstroke / Kepanasan',
+           steps:['Pindah ke tempat teduh segera','Siram air sejuk di leher & ketiak','Beri minum air sejuk sedikit-sedikit','Kipas badan','Hubungi ambulans jika pengsan']},
+          {ico:'😵',color:'#ede9fe',bc:'#c4b5fd',tc:'#4c1d95',name:'Pengsan / Collapse',
+           steps:['Baringkan dalam posisi pemulihan','Semak pernafasan & nadi','Jangan beri minum jika tidak sedar','Hubungi 999 segera','Kekal bersama hingga bantuan tiba']},
+          {ico:'🩹',color:'#dcfce7',bc:'#86efac',tc:'#14532d',name:'Kecederaan Ringan',
+           steps:['PRICE: Protect, Rest, Ice, Compress, Elevate','Ais 15–20 min setiap 2 jam','Elak panas & urut dalam 48 jam pertama','Rujuk fisio jika sakit teruk','Rekod kecederaan dalam borang fisio']}
+        ].map(p=>`<div style="background:${p.color};border:1.5px solid ${p.bc};border-radius:14px;padding:16px">
+          <div style="font-size:28px;margin-bottom:8px">${p.ico}</div>
+          <div style="font-size:13px;font-weight:800;color:${p.tc};margin-bottom:10px;font-family:Outfit,sans-serif">${p.name}</div>
+          <ul style="list-style:none;padding:0">${p.steps.map((s,i)=>`<li style="font-size:11.5px;color:#374151;padding:3px 0 3px 18px;position:relative;line-height:1.5"><span style="position:absolute;left:0;font-weight:800;color:${p.tc}">${i+1}.</span>${s}</li>`).join('')}</ul>
+        </div>`).join('')}
+      </div>
+      <div class="tp-callout tp-c-gold"><strong>📞 Nombor Penting Semasa Kejohanan</strong><p>Ambulans: <strong>999</strong> · Hospital Sultanah Aminah Johor Bahru: <strong>07-2257000</strong> · Pegawai Fisio Pasukan: Nur Zahratul Syazwani · Pengurus Pasukan: Muhammad Muizzuddin</p></div>`
+  },
+
+  raceday:{
+    icon:'🏆', title:'Strategi Hari Lumba — 20–22 April 2026',
+    content:`
+      <div class="tp-callout tp-c-gold"><strong>📍 Maklumat Kejohanan</strong><p>Tanjung Puteri Resort, Pasir Gudang, Johor · MSSJ 2026 Merentas Desa Pendidikan Khas · 20–22 April 2026.</p></div>
+      <h3 style="font-size:14px;font-weight:800;color:#0a3d62;margin:18px 0 10px;font-family:Outfit,sans-serif">⏰ Jadual Hari Kejohanan</h3>
+      <div style="position:relative;padding-left:28px">
+        <div style="position:absolute;left:9px;top:8px;bottom:8px;width:2px;background:linear-gradient(to bottom,#b8860b,#1565c0,#27ae60);border-radius:2px"></div>
+        ${[
+          {t:'5:30 am',title:'Bangun & Sarapan Ringan',desc:'Nasi + telur / roti + pisang. Air 500ml. Jangan makan banyak.'},
+          {t:'6:30 am',title:'Kumpul di Bas',desc:'Semua atlet & jurulatih berkumpul. Semak bib nombor, kasut & pakaian.'},
+          {t:'7:00 am',title:'Tiba di Venue & Recce',desc:'Jalan-jalan laluan 1km pertama. Kenalpasti turun-naik, tanah berlumpur.'},
+          {t:'7:30 am',title:'Warm-Up Rasmi',desc:'15 min jogging ringan + drills. Nadi ke zon 2 (120–130 bpm).'},
+          {t:'7:50 am',title:'Kumpul di Start Line',desc:'Ambil posisi depan. Bernafas dalam, visualisasi perlumbaan.'},
+          {t:'8:00 am',title:'GUN START — LUMBA!',desc:'Kawal 1km pertama. Come Back Stronger!'},
+          {t:'Selepas Lumba',title:'Cool-Down & Pemulihan',desc:'Jog 10 min + regangan. Makan karbohidrat + protein dalam 30 min.'},
+        ].map(s=>`<div style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:14px 16px;margin-bottom:8px">
+          <div style="font-size:11px;font-weight:800;color:#b8860b;font-family:Outfit,sans-serif;margin-bottom:2px">${s.t}</div>
+          <div style="font-size:13px;font-weight:700;color:#1a2a4a;font-family:Outfit,sans-serif">${s.title}</div>
+          <div style="font-size:12px;color:#64748b;margin-top:3px;line-height:1.5">${s.desc}</div>
+        </div>`).join('')}
+      </div>
+      <div class="tp-callout tp-c-green" style="margin-top:16px"><strong>💪 Mesej Semangat</strong><p>"Road to Glory — Come Back Stronger. Team Kluang bukan sekadar berlari, kita berlari dengan hati. Setiap langkah membawa kita lebih dekat kepada impian. Buktikan kepada Johor bahawa Kluang layak berdiri di hadapan!"</p></div>`
+  },
+
+  // ══════════════════════════════════════
+  // PANDUAN JURULATIH NUBIS
+  // ══════════════════════════════════════
+
+  coach_fasa1:{
+    icon:'📋', title:'Panduan Jurulatih — Fasa 1 (Minggu 1–3)',
+    content:`
+      <div class="tp-callout tp-c-green"><strong>👋 Untuk Jurulatih Baru</strong><p>Fasa ini adalah yang paling penting. Jangan tergesa-gesa naikkan beban. Tugas utama anda pada minggu-minggu ini adalah <strong>kenali atlet</strong>, bina kepercayaan, dan pastikan mereka datang latihan dengan gembira.</p></div>
+
+      <h3 style="font-size:14px;font-weight:800;color:#0a3d62;margin:18px 0 12px;font-family:Outfit,sans-serif">📌 Langkah Pelaksanaan Sesi Harian</h3>
+
+      ${[
+        {
+          step:'1', color:'#6366f1', title:'Sebelum Latihan Bermula (15 min awal)',
+          items:[
+            '✅ Tiba 15 minit lebih awal — pastikan kawasan selamat, tiada lubang atau batu',
+            '✅ Sediakan botol air — wajib ada air cukup untuk semua atlet',
+            '✅ Tulis nama-nama yang hadir dalam buku rekod',
+            '✅ Semak kasut dan pakaian atlet — kasut koyak = risiko kecederaan',
+            '✅ Tanya ringkas: "Siapa rasa tidak sihat atau sakit hari ini?"'
+          ]
+        },
+        {
+          step:'2', color:'#f59e0b', title:'Warm-Up (10 minit) — WAJIB, Jangan Skip!',
+          items:[
+            '🔶 Minta atlet berjalan pantas 2 pusingan padang dulu',
+            '🔶 Kemudian jogging ringan 1 pusingan — nadi mula naik',
+            '🔶 Drill teknik: High Knees 20m, Butt Kicks 20m, A-Skip 20m (ulang 2x)',
+            '🔶 Regangan dinamik: putar bahu, putar pinggul, hayun kaki ke hadapan',
+            '⚠️ JANGAN buat regangan statik (tahan pose) sebelum lari — tunggu selepas cool-down'
+          ]
+        },
+        {
+          step:'3', color:'#10b981', title:'Sesi Utama — Ikut Jadual Minggu',
+          items:[
+            '📋 Minggu 1: Jogging 20 min berterusan @ kadar selesa — jangan tengok masa, tengok pernafasan',
+            '📋 Minggu 2: Tambah 5 min — 25 min berterusan + 4×100m strides akhir',
+            '📋 Minggu 3: 30 min berterusan + drill teknik 15 min',
+            '👁️ Cara pantau intensiti: Atlet MESTI boleh bercakap ayat pendek semasa berlari',
+            '🗣️ Jika atlet tercungap dan tak boleh cakap — suruh perlahan, ini terlalu laju untuk Fasa 1'
+          ]
+        },
+        {
+          step:'4', color:'#ec4899', title:'Cool-Down (10 minit) — Jangan Biarkan Atlet Terus Duduk',
+          items:[
+            '🔷 Jogging perlahan 1 pusingan selepas sesi utama',
+            '🔷 Kemudian jalan kaki 1 pusingan sambil bernafas dalam',
+            '🔷 Regangan statik: hamstring 30 saat, quad 30 saat, betis 30 saat setiap kaki',
+            '🔷 Bagi atlet minum air — minimum 200ml',
+            '🔷 Rekod masa, jarak, dan pemerhatian dalam buku latihan'
+          ]
+        },
+        {
+          step:'5', color:'#0ea5e9', title:'Selepas Sesi — Maklum Balas & Motivasi',
+          items:[
+            '💬 Kumpulkan semua atlet dalam bulatan — berdiri, bukan duduk',
+            '💬 Puji USAHA bukan hasil: "Bagus kerana kamu kekal berlari walaupun penat"',
+            '💬 Beritahu apa yang akan dibuat sesi akan datang — buat mereka excited',
+            '💬 Tanya: "Ada yang nak tanya atau rasa ada yang sakit?"',
+            '📱 Hantar mesej ringkas kepada ibu bapa/penjaga: "Latihan selesai. [Nama] ok."'
+          ]
+        }
+      ].map(s=>`
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:14px;margin-bottom:12px;overflow:hidden">
+        <div style="background:${s.color};padding:10px 16px;display:flex;align-items:center;gap:10px">
+          <div style="background:rgba(255,255,255,.25);width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:#fff;font-family:Outfit,sans-serif;flex-shrink:0">${s.step}</div>
+          <div style="font-size:13px;font-weight:800;color:#fff;font-family:Outfit,sans-serif">${s.title}</div>
+        </div>
+        <div style="padding:14px 16px">
+          ${s.items.map(i=>`<div style="font-size:12.5px;color:#374151;padding:5px 0;border-bottom:1px dashed #f0f3f8;line-height:1.6">${i}</div>`).join('')}
+        </div>
+      </div>`).join('')}
+
+      <div class="tp-callout tp-c-gold"><strong>💡 Petua Emas Fasa 1</strong><p>Setiap kali atlet bertanya "Boleh lari lagi ke?" — jawab "Boleh, tapi simpan tenaga dulu." Konsistensi hadir latihan lebih penting daripada prestasi dalam Fasa 1. Atlet yang hadir 100% akan mengatasi atlet berbakat yang hadir 50%.</p></div>`
+  },
+
+  coach_fasa2:{
+    icon:'📋', title:'Panduan Jurulatih — Fasa 2 (Minggu 4–6)',
+    content:`
+      <div class="tp-callout tp-c-gold"><strong>⚡ Masuk Gear Kedua</strong><p>Fasa 2 adalah di mana badan mula beradaptasi. Atlet akan mula rasa penat yang berbeza — ini normal. Tugas anda adalah <strong>kawal beban dengan bijak</strong> dan jangan biarkan semangat mereka mendorong mereka terlebih latih.</p></div>
+
+      <h3 style="font-size:14px;font-weight:800;color:#0a3d62;margin:18px 0 12px;font-family:Outfit,sans-serif">📌 Cara Jalankan Latihan Interval (Newbie Coach Guide)</h3>
+
+      ${[
+        {
+          step:'1', color:'#f59e0b', title:'Faham Dulu Apa Itu Interval',
+          items:[
+            '📖 Interval = berlari laju → rehat → berlari laju → rehat (ulang)',
+            '📖 Tujuan: paksa badan ke tahap intensiti yang tidak boleh dicapai dengan lari berterusan',
+            '📖 Rehat antara interval = 60–90 saat jalan perlahan (bukan duduk)',
+            '📖 Jurulatih perlu rekod masa setiap ulangan — beli jam loceng atau guna telefon',
+            '📖 Atlet MESTI tercungap selepas setiap ulangan — jika tidak, mereka tidak cukup laju'
+          ]
+        },
+        {
+          step:'2', color:'#6366f1', title:'Cara Setup Latihan Interval di Padang',
+          items:[
+            '🏁 Letakkan kon/botol sebagai penanda jarak 200m, 300m, atau 400m',
+            '🏁 Kumpulkan semua atlet di garisan mula',
+            '🏁 Terangkan: "Lari sehabis boleh dari sini ke kon sana, kemudian jalan balik"',
+            '🏁 Lakukan 1 ulangan percubaan dahulu pada 70% — bukan full speed',
+            '🏁 Selepas percubaan, baru mulakan set pertama yang sebenar'
+          ]
+        },
+        {
+          step:'3', color:'#10b981', title:'Semasa Atlet Berlari — Apa Perlu Jurulatih Buat',
+          items:[
+            '👁️ Berdiri di TENGAH jarak — nampak mula dan tamat serentak',
+            '📣 Bagi arahan semangat pendek: "Angkat lutut!" "Ayun tangan!" "Hampir dah!"',
+            '⏱️ Rekod masa setiap ulangan — bandingkan ulangan 1 vs ulangan terakhir',
+            '🔴 Jika atlet mula pincang atau pegang lutut — hentikan terus, jangan paksa teruskan',
+            '💧 Pastikan air tersedia — bagi minum selepas setiap 2 ulangan'
+          ]
+        },
+        {
+          step:'4', color:'#ec4899', title:'Cara Jalankan Hill Training (Latihan Bukit)',
+          items:[
+            '🏔️ Cari cerun yang stabil — bukan terlalu curam, bukan terlalu landai',
+            '🏔️ Jarak bukit: B12 = 60–80m, B15 = 80–100m, B19 = 100–120m',
+            '🏔️ Teknik naik bukit: condong ke hadapan sedikit, langkah pendek & pantas, angkat lutut',
+            '🏔️ Teknik turun bukit: perlahan, jangan brek mengejut, kaki sedikit bengkok',
+            '⚠️ Jangan biarkan atlet pecut turun bukit — risiko kecederaan lutut sangat tinggi'
+          ]
+        },
+        {
+          step:'5', color:'#0ea5e9', title:'Tanda Amaran — Bila Perlu Kurangkan Beban',
+          items:[
+            '🚨 Atlet mengadu sakit yang sama 2 sesi berturut-turut — rehat dan rujuk fisio',
+            '🚨 Prestasi merosot lebih 10% berbanding minggu lepas — badan belum pulih',
+            '🚨 Atlet nampak lesu, mood buruk, malas — mungkin lebih latih atau kurang tidur',
+            '🚨 Kadar nadi rehat naik 5–7 bpm pagi hari — tanda badan masih stress',
+            '✅ Penyelesaian: kurangkan 30% jarak atau ulangan minggu tersebut — ini bukan kelemahan'
+          ]
+        }
+      ].map(s=>`
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:14px;margin-bottom:12px;overflow:hidden">
+        <div style="background:${s.color};padding:10px 16px;display:flex;align-items:center;gap:10px">
+          <div style="background:rgba(255,255,255,.25);width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:#fff;font-family:Outfit,sans-serif;flex-shrink:0">${s.step}</div>
+          <div style="font-size:13px;font-weight:800;color:#fff;font-family:Outfit,sans-serif">${s.title}</div>
+        </div>
+        <div style="padding:14px 16px">
+          ${s.items.map(i=>`<div style="font-size:12.5px;color:#374151;padding:5px 0;border-bottom:1px dashed #f0f3f8;line-height:1.6">${i}</div>`).join('')}
+        </div>
+      </div>`).join('')}
+
+      <div class="tp-callout tp-c-red"><strong>⚠️ Kesilapan Paling Biasa Jurulatih Baru di Fasa 2</strong><p>Menaikkan beban terlalu cepat kerana atlet nampak "okay". Ingat — kerosakan akibat lebih latih tidak nampak dalam 1–2 hari. Ia muncul 5–7 hari kemudian dalam bentuk kecederaan atau demam. <strong>Sabar adalah latihan terbaik anda sebagai jurulatih.</strong></p></div>`
+  },
+
+  coach_fasa3:{
+    icon:'📋', title:'Panduan Jurulatih — Fasa 3 (Minggu 7–8)',
+    content:`
+      <div class="tp-callout tp-c-red"><strong>🎯 Masuk Mod Perlumbaan</strong><p>Fasa ini mensimulasi keadaan lumba sebenar. Atlet perlu merasai tekanan, keletihan, dan cara mengatasinya — <strong>sebelum hari lumba sebenar</strong>. Tugas anda adalah buat suasana latihan seserius mungkin.</p></div>
+
+      <h3 style="font-size:14px;font-weight:800;color:#0a3d62;margin:18px 0 12px;font-family:Outfit,sans-serif">📌 Cara Jalankan Race Simulation</h3>
+
+      ${[
+        {
+          step:'1', color:'#ef4444', title:'Setup Race Simulation yang Betul',
+          items:[
+            '🏁 Bagi setiap atlet nombor bib — walaupun hanya kertas A4 diikat dengan pin',
+            '🏁 Guna jam stopwatch rasmi — rekod masa setiap km, bukan hanya tamat',
+            '🏁 Jemput 2–3 jurulatih lain atau guru untuk berdiri di titik-titik berbeza sebagai penanda',
+            '🏁 Buat briefing sebelum mula seperti briefing lumba sebenar — serius, fokus',
+            '🏁 Jangan bagi semangat keterlaluan semasa simulasi — biar atlet uruskan diri sendiri'
+          ]
+        },
+        {
+          step:'2', color:'#7c3aed', title:'Cara Ajar Pacing Strategy (Strategi Kadar Lari)',
+          items:[
+            '📖 Terangkan kepada atlet: "1km pertama adalah ujian sabar, bukan kelajuan"',
+            '📖 Bagi mereka target pace: B12 = 5:30–6:00 min/km, B15 = 5:00–5:30, B19 = 4:30–5:00',
+            '📖 Ajar cara rasa pace tanpa jam: pernafasan kira 2 langkah masuk, 2 langkah keluar',
+            '📖 Latih negative split: separuh pertama perlahan 5%, separuh kedua lebih laju',
+            '📖 Selepas simulasi, duduk bersama dan analisis masa setiap km — tunjukkan carta'
+          ]
+        },
+        {
+          step:'3', color:'#0891b2', title:'Cara Tangani Atlet yang Berhenti Semasa Simulasi',
+          items:[
+            '💬 Jangan marah atau tunjuk muka kecewa — ini akan merosakkan kepercayaan mereka',
+            '💬 Tanya: "Apa yang kamu rasa? Sakit, atau penat, atau hilang semangat?"',
+            '💬 Jika sakit fizikal → hentikan, panggil fisio',
+            '💬 Jika penat → "Jalan dulu 30 saat, kemudian jog ringan semula"',
+            '💬 Jika hilang semangat → selepas latihan, bual secara peribadi — bukan depan kumpulan'
+          ]
+        },
+        {
+          step:'4', color:'#059669', title:'Debriefing Selepas Race Simulation — Sangat Penting',
+          items:[
+            '🗣️ Kumpulkan semua atlet dalam bulatan dalam masa 10 minit selepas tamat',
+            '🗣️ Tanya satu-satu: "Bahagian mana paling susah? Apa yang akan buat lain lain kali?"',
+            '🗣️ Kongsi masa rasmi setiap km — bukan untuk bandingkan, tapi untuk belajar',
+            '🗣️ Highlight satu perkara positif untuk setiap atlet secara spesifik',
+            '🗣️ Tutup dengan soal: "Siapa rasa dah lebih bersedia untuk lumba sebenar?" — sambut respons mereka'
+          ]
+        },
+        {
+          step:'5', color:'#d97706', title:'Latihan Mental — 10 Minit Setiap Sesi',
+          items:[
+            '🧘 Minta atlet duduk tenang, pejam mata',
+            '🧘 Panduan audio jurulatih: "Bayangkan kamu di garisan mula... nampak laluan di hadapan..."',
+            '🧘 "Kamu mula berlari... rasa angin... rasa kaki cecah tanah..."',
+            '🧘 "Sampai bahagian paling susah... kamu tarik nafas dalam... dan teruskan..."',
+            '🧘 "Nampak garisan tamat... kamu pecutan... kamu langkah garis... kamu tersenyum"',
+            '🧘 Buka mata perlahan. Tanya: "Macam mana rasa?" — Dengar jawapan mereka.'
+          ]
+        }
+      ].map(s=>`
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:14px;margin-bottom:12px;overflow:hidden">
+        <div style="background:${s.color};padding:10px 16px;display:flex;align-items:center;gap:10px">
+          <div style="background:rgba(255,255,255,.25);width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:#fff;font-family:Outfit,sans-serif;flex-shrink:0">${s.step}</div>
+          <div style="font-size:13px;font-weight:800;color:#fff;font-family:Outfit,sans-serif">${s.title}</div>
+        </div>
+        <div style="padding:14px 16px">
+          ${s.items.map(i=>`<div style="font-size:12.5px;color:#374151;padding:5px 0;border-bottom:1px dashed #f0f3f8;line-height:1.6">${i}</div>`).join('')}
+        </div>
+      </div>`).join('')}
+
+      <div class="tp-callout tp-c-gold"><strong>💡 Ingat Ini</strong><p>Atlet yang bersedia mental akan mengatasi atlet yang lebih fit secara fizikal pada hari lumba. Fasa 3 adalah di mana pemenang dibentuk — bukan di padang, tapi di dalam kepala mereka.</p></div>`
+  },
+
+  coach_fasa4:{
+    icon:'📋', title:'Panduan Jurulatih — Fasa 4 Tapering (Minggu 9–10)',
+    content:`
+      <div class="tp-callout tp-c-green"><strong>🏁 Kurangkan, Jangan Hentikan</strong><p>Fasa tapering adalah yang paling <strong>susah dijelaskan kepada atlet</strong> — mereka akan rasa malas, rasa macam hilang fitness, dan mungkin minta latihan lebih. Tugas anda adalah keyakinkan mereka bahawa rehat adalah sebahagian latihan.</p></div>
+
+      <h3 style="font-size:14px;font-weight:800;color:#0a3d62;margin:18px 0 12px;font-family:Outfit,sans-serif">📌 Cara Urus Fasa Tapering</h3>
+
+      ${[
+        {
+          step:'1', color:'#10b981', title:'Cara Jelaskan Tapering kepada Atlet',
+          items:[
+            '🗣️ Gunakan analogi mudah: "Macam telefon yang kita cas penuh sebelum guna seharian"',
+            '🗣️ "Kalau kita latihan kuat sampai hari lumba, badan masuk lumba dalam keadaan penat"',
+            '🗣️ "Latihan dah selesai — minggu ini kita simpan kuasa untuk hari lumba"',
+            '🗣️ Atlet akan rasa "lembek" atau "berat" — ini normal, namanya taper blues',
+            '🗣️ Yakinkan: "Rasa pelik itu bermakna badan sedang pulih dan kuat semula"'
+          ]
+        },
+        {
+          step:'2', color:'#6366f1', title:'Jadual Tapering Mudah untuk Jurulatih',
+          items:[
+            '📅 -14 hari: Kurangkan jarak 40% — kekalkan 2–3 strides 100m laju di hujung sesi',
+            '📅 -10 hari: 1 sesi interval pendek (4×200m sahaja) — bukan 10×400m macam biasa',
+            '📅 -7 hari: Jogging 15–20 min sahaja — fokus teknik dan postur',
+            '📅 -5 hari: Mobiliti dan regangan 30 min — foam rolling, yoga ringan',
+            '📅 -3 hari: Easy run 10 min + 3 strides + habis',
+            '📅 -2 hari: REHAT PENUH — suruh tidur 9–10 jam malam ini',
+            '📅 -1 hari: Jog 10 min sahaja + lawat laluan lumba jika boleh'
+          ]
+        },
+        {
+          step:'3', color:'#f59e0b', title:'Pemakanan Minggu Terakhir — Brief Atlet & Ibu Bapa',
+          items:[
+            '🍚 3 hari sebelum lumba: Nasi, pasta, roti, ubi — makan lebih karbohidrat dari biasa',
+            '🍚 Elak makanan baru yang tidak biasa dimakan — risiko perut tidak selesa',
+            '🚫 Elak makanan pedas, berlemak, atau bersantan pada -2 hari dan -1 hari',
+            '💧 Minum air lebih dari biasa — urin mesti jernih atau kuning muda',
+            '🛌 Tidur awal bermula -3 hari — matikan skrin telefon 30 minit sebelum tidur'
+          ]
+        },
+        {
+          step:'4', color:'#ec4899', title:'Perkara Wajib Disemak Malam Sebelum Lumba',
+          items:[
+            '✅ Bib nombor — sudah diterima dan disimpan dalam beg',
+            '✅ Kasut lumba — cuci, ikat semula dengan betul, tiada tapak tercabut',
+            '✅ Pakaian lumba — telah dicuba sebelum ini, tiada yang akan lecet',
+            '✅ Sarapan esok — sudah tahu apa nak makan, bahan-bahan sudah ada',
+            '✅ Jadual waktu — tahu waktu kumpul bas, waktu warm-up, waktu gun start',
+            '✅ Nombor telefon jurulatih & pengurus pasukan disimpan dalam telefon'
+          ]
+        },
+        {
+          step:'5', color:'#0ea5e9', title:'Hari Lumba — Peranan Jurulatih di Venue',
+          items:[
+            '⏰ Tiba 1 jam sebelum gun start — semak kawasan warm-up dan jarak laluan',
+            '🏃 Pimpin warm-up bersama — jangan biarkan atlet warm-up bersendirian',
+            '📍 Berdiri di KM 1 untuk pantau pace awal — paling kritikal',
+            '📍 Kemudian gerak ke titik tengah atau KM terakhir untuk bagi semangat',
+            '📣 Arahan semangat yang berkesan: sebut nama atlet + arahan spesifik: "Danial! Angkat tangan! Hampir dah!"',
+            '🏁 Di garisan tamat: sambut setiap atlet, beri air, cegah mereka duduk terus'
+          ]
+        }
+      ].map(s=>`
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:14px;margin-bottom:12px;overflow:hidden">
+        <div style="background:${s.color};padding:10px 16px;display:flex;align-items:center;gap:10px">
+          <div style="background:rgba(255,255,255,.25);width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:#fff;font-family:Outfit,sans-serif;flex-shrink:0">${s.step}</div>
+          <div style="font-size:13px;font-weight:800;color:#fff;font-family:Outfit,sans-serif">${s.title}</div>
+        </div>
+        <div style="padding:14px 16px">
+          ${s.items.map(i=>`<div style="font-size:12.5px;color:#374151;padding:5px 0;border-bottom:1px dashed #f0f3f8;line-height:1.6">${i}</div>`).join('')}
+        </div>
+      </div>`).join('')}
+
+      <div class="tp-callout tp-c-gold"><strong>💛 Nota Akhir untuk Jurulatih Baru</strong><p>Anda tidak perlu tahu segalanya. Atlet tidak memerlukan jurulatih yang sempurna — mereka memerlukan jurulatih yang <strong>hadir, konsisten, dan ikhlas</strong>. Pada hari lumba, lihat muka mereka apabila langkah garisan tamat. Itulah sebab anda di sini.</p></div>`
+  },
+
+  coach_b12:{
+    icon:'📋', title:'Panduan Jurulatih — Cara Latih B12/P12',
+    content:`
+      <div class="tp-callout tp-c-green"><strong>👦 Fahami Dulu Siapa Mereka</strong><p>Atlet B12 berumur 10–12 tahun. Otak mereka masih dalam fasa perkembangan — mereka belajar melalui <strong>pengalaman, permainan, dan pujian</strong>. Elak arahan teknikal yang panjang. Tunjuk, bukan sekadar cakap.</p></div>
+
+      <h3 style="font-size:14px;font-weight:800;color:#0a3d62;margin:18px 0 12px;font-family:Outfit,sans-serif">📌 Pendekatan Latihan B12 — Step by Step</h3>
+
+      ${[
+        {
+          step:'1', color:'#3b82f6', title:'Cara Mulakan Sesi dengan B12',
+          items:[
+            '🎮 Mulakan dengan aktiviti fun — bukan terus lari. Contoh: kejar-kejar 3 minit',
+            '🎮 Kemudian transisi ke warm-up: "Okay semua ikut akak/abang buat macam ni"',
+            '👁️ Tunjuk dulu sebelum suruh buat — demonstrasi lebih berkesan daripada penjelasan',
+            '🗣️ Guna bahasa mudah: "Lari sampai pokok tu, kemudian balik" — bukan "200m interval"',
+            '✨ Nama mereka adalah kuasa — panggil nama selalu semasa sesi'
+          ]
+        },
+        {
+          step:'2', color:'#06b6d4', title:'Cara Ajar Teknik Lari kepada B12',
+          items:[
+            '🦵 High Knees: "Cuba angkat lutut macam nak cecah perut" — tunjuk dulu 10 langkah',
+            '🦶 Butt Kicks: "Cuba tumit cecah punggung" — buat bersama-sama sambil ketawa',
+            '💨 Teknik pernafasan: "Tarik nafas 2 langkah, hembus 2 langkah" — latih berjalan dulu',
+            '👐 Ayunan tangan: "Tangan macam pegang telur — jangan genggam kuat" — buat mimik',
+            '⏱️ Jangan ajar semua teknik dalam satu sesi — pilih 1–2 sahaja setiap minggu'
+          ]
+        },
+        {
+          step:'3', color:'#8b5cf6', title:'Cara Kawal Kumpulan B12 yang Aktif',
+          items:[
+            '📣 Isyarat tangan lebih berkesan daripada jerit — buat isyarat "berhenti" yang konsisten',
+            '📣 Gunakan wisel: 1 wisel = berhenti, 2 wisel = kumpul, 3 wisel = darurat',
+            '🔴 Jika ada yang bergaduh atau buli — hentikan sesi terus, tangani isu dulu',
+            '🟡 Pisahkan atlet yang terlalu laju dan terlalu perlahan — bagi kumpulan berlainan',
+            '🟢 Bagi peranan kecil: "Kamu jaga kon ini" — buat mereka rasa penting'
+          ]
+        },
+        {
+          step:'4', color:'#10b981', title:'Cara Bagi Maklum Balas kepada B12',
+          items:[
+            '✅ Pujian spesifik > pujian umum: "Bagus cara kamu angkat lutut tadi" bukan "Bagus!"',
+            '✅ Betulkan teknik dengan lembut: "Cuba try macam ni..." bukan "Salah tu!"',
+            '✅ Jangan bandingkan sesama atlet — setiap kanak-kanak punya rentak berbeza',
+            '✅ Jika menangis atau merajuk — duduk bersama, dengar dulu sebelum motivasi',
+            '✅ Hubungi ibu bapa jika ada tingkah laku luar biasa — jangan tanggung sorang'
+          ]
+        }
+      ].map(s=>`
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:14px;margin-bottom:12px;overflow:hidden">
+        <div style="background:${s.color};padding:10px 16px;display:flex;align-items:center;gap:10px">
+          <div style="background:rgba(255,255,255,.25);width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:#fff;font-family:Outfit,sans-serif;flex-shrink:0">${s.step}</div>
+          <div style="font-size:13px;font-weight:800;color:#fff;font-family:Outfit,sans-serif">${s.title}</div>
+        </div>
+        <div style="padding:14px 16px">
+          ${s.items.map(i=>`<div style="font-size:12.5px;color:#374151;padding:5px 0;border-bottom:1px dashed #f0f3f8;line-height:1.6">${i}</div>`).join('')}
+        </div>
+      </div>`).join('')}
+
+      <div class="tp-callout tp-c-gold"><strong>🌟 Matlamat Sebenar Latih B12</strong><p>Bukan Top 5. Matlamat sebenar latih B12 adalah pastikan mereka <strong>jatuh cinta dengan sukan lari</strong>. Jika mereka pergi balik ke sekolah dan cakap kepada kawan "Latihan tadi seronok!" — anda telah berjaya sebagai jurulatih.</p></div>`
+  },
+
+  coach_b15:{
+    icon:'📋', title:'Panduan Jurulatih — Cara Latih B15/P15',
+    content:`
+      <div class="tp-callout tp-c-gold"><strong>🧑 Faham Atlet B15</strong><p>Umur 13–15 tahun — fasa remaja awal. Mereka sudah boleh terima arahan teknikal, tapi ego mula terbentuk. Mereka <strong>sangat sensitif kepada kritikan depan rakan</strong>. Beri maklum balas negatif secara peribadi, bukan depan kumpulan.</p></div>
+
+      <h3 style="font-size:14px;font-weight:800;color:#0a3d62;margin:18px 0 12px;font-family:Outfit,sans-serif">📌 Pendekatan Latihan B15 — Step by Step</h3>
+
+      ${[
+        {
+          step:'1', color:'#a855f7', title:'Cara Bina Disiplin Latihan B15',
+          items:[
+            '📋 Buat jadual latihan bertulis — tampal di papan notis atau hantar WhatsApp grup',
+            '📋 Tetapkan jangkaan jelas dari hari pertama: masa mula, pakaian, tingkah laku',
+            '⏰ Jika lewat 5 minit — warm-up sendiri. Jika lewat 10 minit — rekod dalam buku',
+            '📱 Buat grup WhatsApp — hantar peringatan latihan malam sebelum',
+            '🏆 Sistem ganjaran mudah: hadir 100% seminggu = nama disebut semasa briefing'
+          ]
+        },
+        {
+          step:'2', color:'#0891b2', title:'Cara Ajar Tempo Run kepada B15',
+          items:[
+            '📖 Terangkan: "Tempo run = lari pada kadar yang susah tapi boleh tahan lama"',
+            '📖 Analogi mudah: "Macam kau lari kejar bas — laju tapi tak habis-habis tenaga"',
+            '⏱️ Mulakan dengan 15 minit — tingkat 5 minit setiap minggu',
+            '👁️ Pantau pernafasan: mereka patut mampu sebut 3–4 perkataan sahaja semasa lari',
+            '📊 Rekod masa setiap sesi — tunjukkan graf kemajuan setiap 2 minggu'
+          ]
+        },
+        {
+          step:'3', color:'#059669', title:'Cara Bina Dinamik Kumpulan B15 yang Sihat',
+          items:[
+            '👥 Pasangkan atlet laju dengan atlet perlahan sebagai "buddy" — bukan untuk bersaing',
+            '👥 Latihan berpasangan: seorang lari, seorang pecaya pace — tukar giliran',
+            '🗣️ Beri tanggungjawab kepada atlet senior: "Kamu jadi pace setter hari ini"',
+            '🚫 Elak suasana kompetitif dalam latihan Fasa 1–2 — simpan untuk simulasi',
+            '💬 Tanya pendapat mereka: "Korang rasa latihan hari ni macam mana?" — mereka akan lebih commit'
+          ]
+        },
+        {
+          step:'4', color:'#dc2626', title:'Cara Tangani Cabaran Khusus B15',
+          items:[
+            '😤 Atlet yang terlalu confident: bagi data — "Masa kamu minggu lepas 6:20/km, target kamu kena 5:50"',
+            '😔 Atlet yang kurang yakin: mulakan dengan jarak pendek, celebrate setiap pencapaian kecil',
+            '💪 Atlet yang malas: cari tahu punca — masalah keluarga? Akademik? Bukan kemalasan semata',
+            '🏃 Atlet yang selalu sakit: semak kasut, tidur, dan pemakanan — mungkin bukan kecederaan',
+            '📱 Atlet fokus telefon: tetapkan peraturan — telefon dalam beg semasa sesi'
+          ]
+        }
+      ].map(s=>`
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:14px;margin-bottom:12px;overflow:hidden">
+        <div style="background:${s.color};padding:10px 16px;display:flex;align-items:center;gap:10px">
+          <div style="background:rgba(255,255,255,.25);width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:#fff;font-family:Outfit,sans-serif;flex-shrink:0">${s.step}</div>
+          <div style="font-size:13px;font-weight:800;color:#fff;font-family:Outfit,sans-serif">${s.title}</div>
+        </div>
+        <div style="padding:14px 16px">
+          ${s.items.map(i=>`<div style="font-size:12.5px;color:#374151;padding:5px 0;border-bottom:1px dashed #f0f3f8;line-height:1.6">${i}</div>`).join('')}
+        </div>
+      </div>`).join('')}
+
+      <div class="tp-callout tp-c-green"><strong>💡 Petua Emas B15</strong><p>Atlet B15 ingin dilihat sebagai "sudah besar". Hormati mereka seperti atlet sebenar — guna terminologi sukan, beri data, minta pandangan mereka. Apabila mereka rasa dihormati, komitmen mereka akan berlipat ganda.</p></div>`
+  },
+
+  coach_b19:{
+    icon:'📋', title:'Panduan Jurulatih — Cara Latih B19/P19',
+    content:`
+      <div class="tp-callout tp-c-red"><strong>🏋️ Atlet B19 — Hampir Dewasa</strong><p>Umur 16–19 tahun. Secara fizikal hampir matang. Mereka boleh terima beban latihan tinggi, tetapi <strong>risiko lebih latih juga paling tinggi</strong>. Mereka juga paling mudah tertekan oleh jangkaan — akademik, keluarga, dan sukan.</p></div>
+
+      <h3 style="font-size:14px;font-weight:800;color:#0a3d62;margin:18px 0 12px;font-family:Outfit,sans-serif">📌 Pendekatan Latihan B19 — Step by Step</h3>
+
+      ${[
+        {
+          step:'1', color:'#ef4444', title:'Cara Bina Pelan Latihan Bersama Atlet B19',
+          items:[
+            '🤝 Libatkan mereka dalam proses: "Korang rasa nak focus apa minggu ni?"',
+            '📊 Tunjukkan data: jadual latihan, carta kemajuan, perbandingan masa',
+            '🎯 Tetapkan sasaran SMART bersama: "Target kamu sub-32 pada Fasa 3 time trial"',
+            '📋 Bagi mereka buku latihan peribadi untuk rekod perasaan, masa, dan kecederaan',
+            '🔄 Review setiap minggu bersama — adjust jika perlu, jelaskan kenapa'
+          ]
+        },
+        {
+          step:'2', color:'#7c3aed', title:'Cara Jalankan Sesi Intensiti Tinggi dengan Selamat',
+          items:[
+            '⚠️ Wajib ada fisio atau orang pertolongan cemas setiap sesi intensiti tinggi',
+            '⚠️ Semak suhu badan sebelum sesi — jika demam atau sakit tekak, rehat penuh',
+            '⏱️ Masa rehat antara set mesti cukup — jangan shortcut waktu rehat',
+            '📏 Guna nadi sebagai panduan: rehat sehingga nadi turun ke bawah 120 bpm sebelum set seterusnya',
+            '🔴 "No Pain No Gain" adalah mitos berbahaya — bezakan antara rasa penat dan rasa sakit'
+          ]
+        },
+        {
+          step:'3', color:'#0891b2', title:'Cara Bina Mentaliti Juara B19',
+          items:[
+            '🧠 Ajar self-talk positif: tulis 3 ayat yang mereka akan ulang semasa lumba',
+            '🧠 Simulasi tekanan: buat latihan dengan masa direkod, tonton orang lain, bunyi bising',
+            '🧠 Ajar cara handle kegagalan: "Masa lambat bukan tanda lemah, ia tanda apa perlu diperbaiki"',
+            '🧠 Kongsi kisah atlet elit yang pernah gagal sebelum berjaya',
+            '🧠 Wujudkan ritual pra-lumba: muzik, doa, ayat semangat — sama setiap kali'
+          ]
+        },
+        {
+          step:'4', color:'#059669', title:'Tanda-Tanda Lebih Latih (Overtraining) — B19 Paling Berisiko',
+          items:[
+            '🚨 Prestasi merosot 2 minggu berturut-turut walaupun latihan konsisten',
+            '🚨 Mood mudah marah, murung, atau tidak bermotivasi',
+            '🚨 Tidur terganggu — sukar tidur atau terlalu mengantuk',
+            '🚨 Selera makan berkurangan drastik',
+            '🚨 Nadi rehat pagi naik 7–10 bpm dari biasa',
+            '✅ Rawatan: rehat penuh 3–5 hari, tidur 9 jam, makan cukup — bukan latihan lebih'
+          ]
+        },
+        {
+          step:'5', color:'#d97706', title:'Cara Bincang Sasaran & Tekanan dengan B19',
+          items:[
+            '💬 Jangan letak sasaran yang hanya bergantung kepada tempat (contoh: "Mesti Top 3")',
+            '💬 Sasaran proses lebih sihat: "Jalankan pacing plan, angkat tangan sepanjang 8km"',
+            '💬 Jika ada tekanan dari pihak lain (PPD, sekolah) — jadi pelindung atlet anda',
+            '💬 Sesi bual peribadi sebulan sekali — tanya pasal kehidupan, bukan sekadar prestasi',
+            '💬 Remind mereka: "Sukan ini untuk kamu, bukan untuk sesiapa pun yang lain"'
+          ]
+        }
+      ].map(s=>`
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:14px;margin-bottom:12px;overflow:hidden">
+        <div style="background:${s.color};padding:10px 16px;display:flex;align-items:center;gap:10px">
+          <div style="background:rgba(255,255,255,.25);width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:#fff;font-family:Outfit,sans-serif;flex-shrink:0">${s.step}</div>
+          <div style="font-size:13px;font-weight:800;color:#fff;font-family:Outfit,sans-serif">${s.title}</div>
+        </div>
+        <div style="padding:14px 16px">
+          ${s.items.map(i=>`<div style="font-size:12.5px;color:#374151;padding:5px 0;border-bottom:1px dashed #f0f3f8;line-height:1.6">${i}</div>`).join('')}
+        </div>
+      </div>`).join('')}
+
+      <div class="tp-callout tp-c-gold"><strong>🏆 Pesan untuk Jurulatih yang Latih B19</strong><p>Atlet B19 akan ingat jurulatih mereka seumur hidup — sama ada positif atau negatif. Cara anda berbicara kepada mereka hari ini membentuk cara mereka berbicara kepada diri sendiri 10 tahun akan datang. <strong>Latih dengan penuh tanggungjawab.</strong></p></div>`
+  }
+};
+
+function openTraining(key){
+  const data = TRAINING_DATA[key] || TRAINING_DATA['overview'];
+  document.getElementById('tpModalIcon').textContent = data.icon;
+  document.getElementById('tpModalTitle').textContent = data.title;
+  document.getElementById('tpInner').innerHTML = `<div class="tp-content active">${data.content}</div>`;
+  document.getElementById('tpModal').classList.add('open');
+  closeSidebar();
+}
+
+function toggleTempSection(){
+  const body  = document.getElementById('tempSectionBody');
+  const arrow = document.getElementById('tempBarArrow');
+  const open  = body.style.display === 'block';
+  body.style.display = open ? 'none' : 'block';
+  arrow.style.transform = open ? 'rotate(0deg)' : 'rotate(180deg)';
+}
+
+// ══════════════════════════════════════
+// TEMPAHAN TOGGLE
+// ══════════════════════════════════════
+function toggleTshirt(){
+  const exp   = document.getElementById('tshirtExpand');
+  const arrow = document.getElementById('tshirtArrow');
+  const open  = exp.style.display === 'block';
+  exp.style.display = open ? 'none' : 'block';
+  arrow.style.transform = open ? 'rotate(0deg)' : 'rotate(180deg)';
+}
+
+// ══════════════════════════════════════
+// NAME LIST POPUP
+// ══════════════════════════════════════
+function showNameList(filterType, filterVal, label){
+  const popup = document.getElementById('namePopup');
+  const body  = document.getElementById('namePopupBody');
+  const title = document.getElementById('namePopupTitle');
+  let matches = [];
+
+  if(filterType==='type'||filterType==='size'){
+    [{arr:ATLET,prefix:'a',role:'Atlet'},
+     {arr:PEGAWAI,prefix:'p',role:'Pegawai'},
+     {arr:GURU,prefix:'g',role:'Guru Pengiring'}]
+    .forEach(g=>{
+      g.arr.forEach((p,i)=>{
+        const d=DATA[`${g.prefix}-${i}`]||{};
+        if(!d.saved) return;
+        if(filterType==='type'?d.type===filterVal:d.size===filterVal)
+          matches.push({nama:p.nama,info:p.info,role:g.role,type:d.type,size:d.size});
+      });
+    });
+  } else {
+    [{arr:PEGAWAI,prefix:'tp',role:'Pegawai'},
+     {arr:GURU,prefix:'tg',role:'Guru Pengiring'}]
+    .forEach(g=>{
+      g.arr.forEach((p,i)=>{
+        const d=DATA2[`${g.prefix}-${i}`]||{};
+        if(!d.saved) return;
+        if(filterType==='ttype'?d.type===filterVal:d.size===filterVal)
+          matches.push({nama:p.nama,info:p.info,role:g.role,type:d.type,size:d.size});
+      });
+    });
+  }
+
+  title.textContent = `${label} — ${matches.length} orang`;
+  const rc={'Atlet':'background:#e3f2fd;color:#0a3d62','Pegawai':'background:#fff3e0;color:#e65100','Guru Pengiring':'background:#f3e5f5;color:#6a1b9a'};
+
+  body.innerHTML = matches.length ? matches.map((m,i)=>`
+    <div class="name-row">
+      <div class="name-num">${i+1}</div>
+      <div class="name-info">
+        <div class="ni-name">${m.nama}</div>
+        <div class="ni-sub">${m.info} &nbsp;·&nbsp; ${m.type||''} ${m.size?'/ '+m.size:''}</div>
+      </div>
+      <span class="name-badge" style="${rc[m.role]||'background:#eee;color:#333'}">${m.role}</span>
+    </div>`).join('')
+  : `<div class="name-popup-empty">😕 Tiada rekod tersimpan untuk kategori ini lagi.</div>`;
+
+  popup.classList.add('open');
+}
+function closeNamePopup(e){
+  if(!e||e.target===document.getElementById('namePopup'))
+    document.getElementById('namePopup').classList.remove('open');
+}
+
+// ══════════════════════════════════════
+// SAVE ALL
+// ══════════════════════════════════════
+function saveAll(){
+  autoSave();
+  showToast('✅ Data disimpan!','ok');
+}
+ 
+// ══════════════════════════════════════
+// EXPORT CSV
+// ══════════════════════════════════════
+function exportCSV(){
+  const rows=[['Bil','Kumpulan','Nama','Maklumat','Jenis Baju','Saiz Baju','Status']];
+  let n=1;
+  ATLET.forEach((p,i)=>{
+    const d=DATA[`a-${i}`]||{};
+    rows.push([n++,'Atlet',p.nama,p.info,d.type||'-',d.size||'-',d.saved?'Tersimpan':'Belum Simpan']);
+  });
+  PEGAWAI.forEach((p,i)=>{
+    const d=DATA[`p-${i}`]||{};
+    rows.push([n++,'Pegawai',p.nama,p.info,d.type||'-',d.size||'-',d.saved?'Tersimpan':'Belum Simpan']);
+  });
+  GURU.forEach((p,i)=>{
+    const d=DATA[`g-${i}`]||{};
+    rows.push([n++,'Guru Pengiring',p.nama,p.info,d.type||'-',d.size||'-',d.saved?'Tersimpan':'Belum Simpan']);
+  });
+  // Tempahan section
+  rows.push(['','','','','','','']);
+  rows.push(['---TEMPAHAN T-SHIRT MSSJ RM35---','','','','','','']);
+  rows.push(['Bil','Kumpulan','Nama','Maklumat','Jenis Baju','Saiz Baju','Status']);
+  let n2=1;
+  PEGAWAI.forEach((p,i)=>{
+    const d=DATA2[`tp-${i}`]||{};
+    if(d.type||d.size) rows.push([n2++,'Pegawai',p.nama,p.info,d.type||'-',d.size||'-',d.saved?'Tersimpan':'Belum Simpan']);
+  });
+  GURU.forEach((p,i)=>{
+    const d=DATA2[`tg-${i}`]||{};
+    if(d.type||d.size) rows.push([n2++,'Guru Pengiring',p.nama,p.info,d.type||'-',d.size||'-',d.saved?'Tersimpan':'Belum Simpan']);
+  });
+  const csv='\uFEFF'+rows.map(r=>r.map(c=>`"${c}"`).join(',')).join('\n');
+  const blob=new Blob([csv],{type:'text/csv;charset=utf-8'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='Saiz_Baju_MSSJ2026_Kluang.csv';
+  a.click();
+  showToast('📥 CSV berjaya dieksport!','ok');
+}
+ 
+// ══════════════════════════════════════
+// RESET
+// ══════════════════════════════════════
+function confirmReset(){
+  const ovl=document.getElementById('resetOvl');
+  ovl.style.display='flex';
+}
+function closeResetModal(){
+  document.getElementById('resetOvl').style.display='none';
+}
+function doReset(){
+  DATA={};
+  DATA2={};
+  RECEIPT2={};
+  localStorage.removeItem('mssj2026v2');
+  localStorage.removeItem('mssj2026t');
+  localStorage.removeItem('mssj2026receipt2');
+  renderAll();
+  closeResetModal();
+  showToast('🔄 Semua data telah direset.','');
+}
+ 
+// ══════════════════════════════════════
+// EDIT OVERLAY (optional row edit)
+// ══════════════════════════════════════
+function openEdit(key,name,type,size){
+  eKey=key; eType=type||''; eSize=size||'';
+  document.getElementById('editName').textContent=name;
+  // reset buttons
+  document.querySelectorAll('#editTypeRow .tb').forEach(b=>{
+    b.classList.remove('active-polo','active-short','active-long');
+    if(b.dataset.t===eType)b.classList.add(typeActiveCls(eType));
+  });
+  document.querySelectorAll('#editSizeRow .sb').forEach(b=>{
+    b.classList.toggle('active',b.dataset.s===eSize);
+  });
+  document.getElementById('editOvl').style.display='block';
+}
+function setEditType(el){
+  eType=el.dataset.t;
+  document.querySelectorAll('#editTypeRow .tb').forEach(b=>b.classList.remove('active-polo','active-short','active-long'));
+  el.classList.add(typeActiveCls(eType));
+}
+function setEditSize(el){
+  eSize=el.dataset.s;
+  document.querySelectorAll('#editSizeRow .sb').forEach(b=>b.classList.toggle('active',b===el));
+}
+function saveEdit(){
+  if(!eType||!eSize){showToast('⚠️ Pilih jenis dan saiz baju!','err');return;}
+  if(!DATA[eKey])DATA[eKey]={};
+  DATA[eKey].type=eType;
+  DATA[eKey].size=eSize;
+  // update row
+  const typeCont=document.getElementById('type-'+eKey);
+  if(typeCont)typeCont.innerHTML=renderTypeButtons(eKey,eType);
+  const sizeCont=document.getElementById('size-'+eKey);
+  if(sizeCont)sizeCont.innerHTML=renderSizeButtons(eKey,eSize);
+  // reattach onclick (re-render handles it via innerHTML)
+  checkDone(eKey);
+  autoSave();
+  closeEdit();
+  showToast('✅ Rekod dikemaskini!','ok');
+}
+function closeEdit(){document.getElementById('editOvl').style.display='none';}
+ 
+// ══════════════════════════════════════
+// TOAST
+// ══════════════════════════════════════
+function showToast(msg,type){
+  const t=document.getElementById('toast');
+  t.textContent=msg;
+  t.className='toast show'+(type?' '+type:'');
+  clearTimeout(t._tid);
+  t._tid=setTimeout(()=>{t.className='toast';},2800);
+}
+
+// ══════════════════════════════════════
+// MAIN PAGE NAVIGATION
+// ══════════════════════════════════════
+const ALL_SECTIONS = ['mainPage','secStats','secAtlet','secPgw','secGuru','secTempahan'];
+
+function showSection(id){
+  ALL_SECTIONS.forEach(s=>{
+    const el=document.getElementById(s);
+    if(el) el.style.display='none';
+  });
+  const target=document.getElementById(id);
+  if(target) target.style.display='block';
+  // Show footer only on main page
+  const footer=document.getElementById('footerActions');
+  if(footer) footer.style.display='none';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function showMain(){
+  ALL_SECTIONS.forEach(s=>{
+    const el=document.getElementById(s);
+    if(el) el.style.display='none';
+  });
+  const mp=document.getElementById('mainPage');
+  if(mp) mp.style.display='block';
+  const footer=document.getElementById('footerActions');
+  if(footer) footer.style.display='block';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+// ══════════════════════════════════════
+// RECEIPT UPLOAD
+// ══════════════════════════════════════
+let receiptUploaded = false;
+
+function handleReceiptUpload(input){
+  const file = input.files[0];
+  if(!file) return;
+
+  // 5MB limit
+  if(file.size > 5*1024*1024){
+    showToast('⚠️ Fail terlalu besar. Maksimum 5MB.','err');
+    input.value='';
+    return;
+  }
+
+  const preview  = document.getElementById('receiptPreview');
+  const img      = document.getElementById('receiptImg');
+  const nameEl   = document.getElementById('receiptFileName');
+  const validMsg = document.getElementById('receiptValidMsg');
+  const okMsg    = document.getElementById('receiptOkMsg');
+  const zone     = document.getElementById('receiptZone');
+
+  nameEl.textContent = file.name;
+
+  if(file.type.startsWith('image/')){
+    const reader = new FileReader();
+    reader.onload = e => {
+      img.src = e.target.result;
+      img.style.display = 'block';
+    };
+    reader.readAsDataURL(file);
+  } else {
+    // PDF — show icon instead
+    img.style.display = 'none';
+  }
+
+  preview.style.display = 'block';
+  zone.style.borderColor = '#16a34a';
+  zone.style.background  = '#f0fdf4';
+  validMsg.style.display = 'none';
+  okMsg.style.display    = 'block';
+  receiptUploaded = true;
+
+  // Save filename to localStorage
+  localStorage.setItem('mssj2026receipt', file.name);
+  showToast('✅ Resit berjaya dimuat naik!','ok');
+}
+
+function removeReceipt(){
+  document.getElementById('receiptPreview').style.display = 'none';
+  document.getElementById('receiptImg').src = '';
+  document.getElementById('receiptFileName').textContent = '—';
+  document.getElementById('receiptFile').value = '';
+  document.getElementById('receiptOkMsg').style.display = 'none';
+  const zone = document.getElementById('receiptZone');
+  zone.style.borderColor = '';
+  zone.style.background  = '';
+  receiptUploaded = false;
+  localStorage.removeItem('mssj2026receipt');
+  showToast('🗑️ Resit telah dibuang.','');
+}
+
+// Block save if no receipt
+const _origSaveRow2 = saveRow2;
+saveRow2 = function(key){
+  if(!receiptUploaded){
+    document.getElementById('receiptValidMsg').style.display = 'block';
+    document.getElementById('receiptZone').scrollIntoView({behavior:'smooth', block:'center'});
+    showToast('⚠️ Sila upload resit dahulu!','err');
+    return;
+  }
+  _origSaveRow2(key);
+};
+
+// Restore receipt state on load
+(function restoreReceipt(){
+  const saved = localStorage.getItem('mssj2026receipt');
+  if(saved){
+    receiptUploaded = true;
+    document.getElementById('receiptFileName').textContent = saved;
+    const preview = document.getElementById('receiptPreview');
+    if(preview) preview.style.display = 'block';
+    const img = document.getElementById('receiptImg');
+    if(img) img.style.display = 'none'; // can't restore actual image from localStorage
+    const okMsg = document.getElementById('receiptOkMsg');
+    if(okMsg) okMsg.style.display = 'block';
+    const zone = document.getElementById('receiptZone');
+    if(zone){ zone.style.borderColor='#16a34a'; zone.style.background='#f0fdf4'; }
+  }
+})();
+
+// Drag and drop support
+document.addEventListener('DOMContentLoaded', ()=>{
+  const zone = document.getElementById('receiptZone');
+  if(!zone) return;
+  zone.addEventListener('dragover', e=>{ e.preventDefault(); zone.classList.add('dragover'); });
+  zone.addEventListener('dragleave', ()=> zone.classList.remove('dragover'));
+  zone.addEventListener('drop', e=>{
+    e.preventDefault();
+    zone.classList.remove('dragover');
+    const file = e.dataTransfer.files[0];
+    if(file){
+      const input = document.getElementById('receiptFile');
+      // Create DataTransfer to assign file
+      const dt = new DataTransfer();
+      dt.items.add(file);
+      input.files = dt.files;
+      handleReceiptUpload(input);
+    }
+  });
+});
+
+// ══════════════════════════════════════
+// INIT
+// ══════════════════════════════════════
+renderAll();
+
+// Hide all sections, show main page only
+showMain();
+</script>
+</body>
+</html>
